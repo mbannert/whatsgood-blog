@@ -1,0 +1,28 @@
+---
+title: "On the radar - Easy radar chart example involving Michael Jordan vs Stephen Curry"
+author: admin
+date: 2016-10-01T21:13:14-05:00
+categories: ["R","R beginners","Basketball"]
+tags: ["R","R beginners","Basketball"]
+---
+
+
+
+<p>Just when we thought we shook off the last pesky next-MJ-writer, this Steph Curry kid shows up to check the wingspan of our jaws. With Kobe Bryant announcing retirement recently and LeBron playing too much freight train style to draw comparisons we thought we were finally done with the search for the next MJ that annoyed basketball fans for more than a decade. If it’s just for the lack of words the basketball world has for #30’s play, the ultimate benchmark of modern basketball seems appropriate. Obviously, given Jordan’s overall achievement and legacy which is light years ahead of Curry despite all the hype, this cannot be a career or legacy comparison. It rather has to be a particular Jordan season vs. Curry’s current season.</p>
+<p><img src="/post/2016-10-01-on-the-radar-chart-example-featuring-curry-jordan_files/figure-html/jordancurry-1.png" width="672" /></p>
+<p>To me, drawing this comparison seems to confirm what was rather a gut feeling when I was watching the Dubs in <em>April</em> last year: Steph Curry <em>is</em> the most unique talent since Michael Jordan. He is still unlikely to be like Mike in the long run but
+he has got the unique once-in-a-generation talent to influence the way the game is played.</p>
+<blockquote class="twitter-tweet" lang="en">
+<p lang="en" dir="ltr">
+<a href="https://twitter.com/octonion"><span class="citation">@octonion</span></a> Steph Curry is the most unique player since MJ. Haven't felt a plus-minus difference like that since watching the Bulls as a kid.
+</p>
+— Matt Bannert (<span class="citation">@whatsgoodio</span>) <a href="https://twitter.com/whatsgoodio/status/589543559038132224">April 18, 2015</a>
+</blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>Despite his sub par frame he has leveled his weaknesses and optimized his handle, stroke and court vision to become ridiculously efficient in many aspects of modern basketball. Very much like Jordan he has studied the game, its environment and himself to find ways to be ahead of any others. Offensively, Curry even managed to be ahead of the game’s GOAT:
+1) he is a substantially better free throw shooter, 2) he has a way better 3 point field goal percentage despite racking up more 3s, 3) he even has a slightly better field goal percentage while scoring about the same ppg (while sitting out fourth quarters) and is two years younger than Jordan was in his stellar 93 season. Yet, his league 2nd steals per game cannot trick us into believing he is anywhere near Jordan as a one-on-one defender.</p>
+<div id="how-to-create-this-chart" class="section level2">
+<h2>How to create this chart</h2>
+<p>It doesn’t always have to be D3 or highcharts. Sometimes out-the-gates-quick is also nice. Sure, javascript based charts aren’t that big of a deal anymore, but still it requires some additional knowledge – particulary in setting up things. Plus, the charts presented above can easily be embedded in markdown or LaTeX based pdf reports. The radar charts are plain R and can be easily created with Minato Nakazawa’s <em>fmsb</em> package which is <a href="https://cran.r-project.org/web/packages/fmsb/index.html">available from CRAN</a>. Note the nice pdensity parameter to fill the polygon.</p>
+<p>Example source code <a href="https://gist.github.com/mbannert/bf5fd087938a4a494ba7">gist</a>.</p>
+</div>

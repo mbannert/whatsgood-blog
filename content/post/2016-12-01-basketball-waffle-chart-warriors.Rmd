@@ -1,0 +1,70 @@
+---
+title: "Waffle charts - Learning from the NBA champs - A beginners example in R"
+author: admin
+date: 2016-12-01T21:13:14-05:00
+categories: ["R","R beginners","Basketball"]
+tags: ["R","R beginners","Basketball"]
+---
+
+
+19 games into the new NBA season, the Golden State Warriors have yet to loose a game. Sports casters are searching for words to express their surprise and fascination. The NBA regular season finally has the kind of story it did not have in years. The reigning champs play a brand of basketball that makes many of us believe we are witnessing a paradigm shift in pro basketball. Plus the Dubs got [Steph Curry who might become the first MVP to earn an MIP award](http://whatsgood.io/blog/2015/12/04/on-the-radar-curry-vs-jordan/).
+
+```{r,echo=FALSE, message=FALSE}
+# load packages - install from CRAN if you don't have the package:
+# install.packages("waffle")
+library(waffle)
+
+# all data taken from 
+# basketball-reference.com - keep up the great work!
+dubs <- c("X3p" = 251,"X2p" = 552 ,"FT" = 333) 
+dubs_points_scored <- dubs * c(3,2,1)
+names(dubs_points_scored) <- c("by 3s","by 2s","by FTs")
+
+# use cavs as benchmark
+cavs <- c(183,495,298)
+cavs_points_scored <- cavs*c(3,2,1)
+names(cavs_points_scored) <- c("by 3s","by 2s","by FTs")
+
+# a waffle chart for the dubs
+gsw <- waffle(dubs_points_scored,
+              rows=40,
+              size=.5,
+              colors=c("#003CC3",
+                       "#FFE500",
+                       "#DCDDDC"))
+
+# a waffle chart for cavs
+cle <- waffle(cavs_points_scored,
+              rows=40,
+              size=.5,
+              colors=c("#9A0041",
+                       "#003578",
+                       "#FED042"),
+              pad=9
+)
+
+
+```
+
+
+
+Since it's hard to find the right words I thought the Warriors recent dominance might be a nice opportunity to say something using *waffle charts*. Some people describe *waffle charts* as rectangular pie charts. The waffle chart below shows how the Warriors pile up points: first and foremost they score a lot and they hit an unprecented amount of threes. Their 3-point shooting accounts for more than one third(!!) of their total points... 
+
+```{r waffle1}
+gsw + theme(legend.position="bottom") +
+  ggtitle("How do the Warriors Score?")
+```
+
+Last year's finals foe (no stranger to trey either), who continues to be among the NBAs elite teams cannot keep up by any means: fewer total points, fewer 3s, fewer 2s and fewer freebies. Plus, 3-point shots account for fewer that 30 percent of the Cavs points. Picture this: If the Warriors had not made a single free throw they would still have scored more points than the Cavs. 
+
+```{r waffle2}
+cle + theme(legend.position="bottom")
+```
+
+## How to create this chart
+
+Actually I had seen such charts before, but admittedly learned just recently that people call them waffle charts. However, I always thought they were a nice alternative to the boredom and limited information of regular pie charts. Plus, the come with an extra creative potential as the single squares can be replaced by icons -- a technique we often encounter in well designed magazines. But, let me stay with the most basic example for now. 
+
+After I knew the name it is was easy to find out the obvious: there is an R package for that. Actually Bob Rudis' [waffle R package](https://cran.r-project.org/web/packages/waffle/index.html) is available from CRAN and is thus easy to install.
+Also the package itself is very intuitive to use and beginneRs can create waffle charts within minutes even if they have never done it before. The *waffle* package is built on top of Hadley's *ggplot2*, which means waffle charts can be customized using the mighty ggplot2 syntax and they profit from *ggplot's* [great documentation](http://docs.ggplot2.org/current/). And here's the source code [gist](https://gist.github.com/mbannert/3c240221d513b3fed8c6) to reproduce my little example.
+
