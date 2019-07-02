@@ -4,10 +4,10 @@ all_day: true
 authors: []
 date: "2019-03-14"
 event: adminR meetup spring edition
-event_url: https://example.org
+event_url: https://www.meetup.com/adminR/
 featured: false
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
+  caption: 'Image credit: [**adminR**](https://www.meetup.com/adminR/)'
   focal_point: Right
 links:
 - icon: twitter
