@@ -4,7 +4,7 @@ all_day: false
 authors: [Matthias Bannert]
 event: useR 2019
 event_url: http://www.user2019.fr/
-featured: false
+featured: true
 image:
   focal_point: Right
 links:
