@@ -21,21 +21,13 @@ tags: ["R","useR!2019",]
 <div id="i-came-for-the-software-and-stayed-for-the-community." class="section level2">
 <h2>1. “I came for the software and stayed for the community.”</h2>
 <p>The above <a href="https://twitter.com/revodavid">David Smith</a> quote nutshells my top take away from the trip to France. Though the gathering of R gurus, their padawans and witnesses exceeded expectations in many regards, the community was what impressed me the most. The Toulouse conference caused an inclusive, familiar vibe around Pierre Baudis conference center all week long (which is an achievement of its own given the sheer size of the conference).</p>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-It was a pleasure and so random to translate the speach from the mayor of <a href="https://twitter.com/Toulouse?ref_src=twsrc%5Etfw"><span class="citation">@Toulouse</span></a> at the <a href="https://twitter.com/hashtag/useR2019?src=hash&amp;ref_src=twsrc%5Etfw">#useR2019</a> welcome reception. <a href="https://t.co/YYLv68MXYM">pic.twitter.com/YYLv68MXYM</a>
-</p>
-— Romain François 👨
-👧
-👧 (<span class="citation">@romain_francois</span>) <a href="https://twitter.com/romain_francois/status/1148641180332318721?ref_src=twsrc%5Etfw">July 9, 2019</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{% tweet "1148641180332318721" %}}
 <p>There is little doubt that good vibe does not just happen these days. In particular not in a community that lives in the troll pested online world to a large degree. But just like good referees, those who must have been nurtering the community’s culture for years, stayed in the background and made sure a diverse variety of attendees felt welcome. Doing so without competing for attention with the topic of the conference itself is what’s special. Chapeaux.</p>
-<p>FWIW: I am not the only one who felt the need express how special atmthe osphere was. <a href="https://www.robinlovelace.net/2019/07/13/user2019/">Robin Lovelace has also just posted his impressions from useR!2019</a>. And we got another thing in common: RobLike several others, Robin also stayed on the ground to get to Toulouse despite the fact that the southern France town is not exactly his nearest neighbor.</p>
+<p>FWIW: I am not the only one who felt the need express how special the atmosphere was. <a href="https://www.robinlovelace.net/2019/07/13/user2019/">Robin Lovelace has also just posted his impressions from useR!2019</a>. And we got another thing in common: Like several others, Robin also stayed on the ground to get to Toulouse despite the fact that the southern France town is not exactly his nearest neighbor.</p>
 </div>
 <div id="how-to-never-forget-that-you-wanted-to-fix-these-things-later---the-todor-package" class="section level2">
 <h2>2. How to never forget that you <em>wanted</em> to fix these things <em>later</em> - the todor package</h2>
-<p>My other take aways are a bit more random as they mostly introduce packages. It’s hard to single out packages or talks and my choice often depends on whether I knew these packages before.</p>
+<p>My other take aways are a bit more random as they mostly introduce packages. It’s hard to single out packages or talks, so my choice often depends on whether I knew these packages before.</p>
 <p>So give it up for the <em>todor</em> package! When we are determined to fix a certain problem or implement a feature, we often fight distraction by postponing a chance to patch a thing we stumbled upon along the way. Often we just add a comment like:</p>
 <ul>
 <li>FIXME</li>
@@ -50,48 +42,35 @@ It was a pleasure and so random to translate the speach from the mayor of <a hre
 <li>COMBAK</li>
 <li>TEMP</li>
 </ul>
-<p><a href="https://CRAN.R-project.org/package=todor">todor</a> is a small but useful package to help you find such a NOTE in a file, package or folder:</p>
+<p><a href="https://CRAN.R-project.org/package=todor">todor</a> is a small but useful package to help you find such a NOTE in a file, package or folder later on:</p>
 <pre class="r"><code>library(todor)
 todor_file()
 todor()
 todor_package()</code></pre>
-<p>The results are shown in R Studio’s marker window.# 3. Are you teaching (or onboarding employees)? Check out datasciencebox.org</p>
-<p>It’s hard to summarize a good summary. So I’ll leave you with what I just tweeted a while ago and hope it makes you read datasciencebox.org</p>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-‘Best’ is a non-optimal label /w all the talks at <a href="https://twitter.com/hashtag/useR2019?src=hash&amp;ref_src=twsrc%5Etfw">#useR2019</a>, but <a href="https://twitter.com/minebocek?ref_src=twsrc%5Etfw"><span class="citation">@minebocek</span></a> on <a href="https://t.co/NXUdWBL6VO">https://t.co/NXUdWBL6VO</a> was one of the best talks I attended. Ever. Made me feel to be on the right track, but still got many inspirations. Not only for teaching students but also for onboarding staff.
-</p>
-— Matt Bannert (<span class="citation">@whatsgoodio</span>) <a href="https://twitter.com/whatsgoodio/status/1148927130711011328?ref_src=twsrc%5Etfw">July 10, 2019</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-<div id="add-r-studio-addins-to-give-your-packages-an-extra-polish" class="section level2">
-<h2>4. Add R Studio addins to give your packages an extra polish</h2>
+<div id="are-you-teaching-or-onboarding-employees-check-out-datasciencebox.org" class="section level1">
+<h1>3. Are you teaching (or onboarding employees)? Check out datasciencebox.org</h1>
+<p>It’s hard to summarize a good summary. So I’ll leave you with what I just tweeted a while ago and hope it makes you visit <a href="https://datasciencebox.org">datasciencebox.org</a>.</p>
+{{% tweet "1148927130711011328" %}}
+<ol start="4" style="list-style-type: decimal">
+<li>Add R Studio addins to give your packages an extra polish</li>
+</ol>
 <p>Even moderately avid R Studio users will have to admit that R Studio continues to have a massive impact when it comes to bringing new users to R. Thanks to the <em>rstudioapi</em> your package can benefit from the exact same tailwind. Addins, macros, snippets and custom shortcuts make life of developers more convenient and the R experience of package endusers much smoother.</p>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-Here's your feedback <a href="https://twitter.com/_ColinFay?ref_src=twsrc%5Etfw"><span class="citation">@_ColinFay</span></a>: Loved it 🔥. Though I've a fair share of R programming on the notch, I slept on pimping <a href="https://twitter.com/rstudio?ref_src=twsrc%5Etfw"><span class="citation">@rstudio</span></a>. Well chosen examples: Doable and very instructive. Learned in minutes how create a wikipedia lookup addin. optimistic I'll remember it. <a href="https://twitter.com/hashtag/useR2019?src=hash&amp;ref_src=twsrc%5Etfw">#useR2019</a> <a href="https://t.co/Rxf49b45F8">pic.twitter.com/Rxf49b45F8</a>
-</p>
-— Matt Bannert (<span class="citation">@whatsgoodio</span>) <a href="https://twitter.com/whatsgoodio/status/1148533934776639489?ref_src=twsrc%5Etfw">July 9, 2019</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p>Though customizing R Studio is definitely easy to do, a good kickstart like Colin Fay’s workshop always helps.
-Hereou couldn’t attend it, I recommend to work through the examples in particular. Working through won’t take long, but his examples are very instructive:</p>
+{{% tweet "1148533934776639489" %}}
+<p>Though customizing R Studio is definitely easy to do, a good kickstart like Colin Fay’s workshop always helps. If you couldn’t attend it, I recommend to work through the examples in particular. Working through won’t take long and Colin’s examples are definitely instructive.</p>
 <p><a href="https://speakerdeck.com/colinfay/hacking-rstudio-advanced-use-of-your-favorite-ide">Slides</a></p>
 <p><a href="https://github.com/ColinFay/user2019workshop">Repo</a></p>
 <p><a href="https://github.com/ColinFay/user2019workshop/tree/master/examples">Example of answers to the exercises</a></p>
-</div>
 <div id="there-are-r-conferences-beyond-user-erum-and-uros" class="section level2">
 <h2>5. There are R conferences beyond useR!: eRum and uRos</h2>
-<p>Good news if you did not attend useR!2019, saw all the buzz on twitter and elsewhere
-and felt like you missed something: There will another useR! <a href="https://twitter.com/user2020stl">useR!2020 in St. Louis</a> is in the making.</p>
+<p>Good news if you did not attend useR!2019, saw all the buzz on twitter and elsewhere and felt like you missed something: There will another useR! <a href="https://twitter.com/user2020stl">useR!2020 in St. Louis</a> is in the making.</p>
 <p>Plus there is <a href="https://twitter.com/erum2020_conf">eRum</a> which takes place in Europe whenever useR! is on another continent.
-So,if you live in the old world and prefer to travel by train, eRum seems to be preta ty cool option as well. It will take place in Milano in May 2020.</p>
-<p>And if you work in official statistics or anything close that,o itRos in Vienna](<a href="https://www.r-project.ro/conference2020.html" class="uri">https://www.r-project.ro/conference2020.html</a>) is for you. uRos is obviously more specof ial interest and gathering way smaller than the big R conferences but (just like Vienna itself) always worth your consideration.</p>
+So, if you live in the old world and prefer to travel by train, eRum seems to be pretty cool option as well. It will take place in Milano in May 2020.</p>
+<p>And if you work in official statistics or anything close to it, uRos in Vienna](<a href="https://www.r-project.ro/conference2020.html" class="uri">https://www.r-project.ro/conference2020.html</a>) is for you. uRos is obviously more of a special interest gathering and way smaller than the big R conferences but (just like Vienna itself) always worth your consideration.</p>
 </div>
 <div id="feature-based-time-series-analysis---the-feasts-package" class="section level2">
 <h2>6. Feature-based time series analysis - the feasts package</h2>
-<p>If there is one name that’s been synonymous to ftoecasting with R it’s Rob J. Hyndman. Among other things, he and his team presented the idea of feature extraction from time series and how such an extraction can be implemented using the tidyverse. Features can be seen as properties of time series that allow for a comparison of time series. So, how <em>seasonal</em> is your series? How do certain series perform given their features?</p>
+<p>If there is one name that’s been synonymous to forecasting with R it’s Rob J. Hyndman. Among other things, he and his team presented the idea of feature extraction from time series and how such an extraction can be implemented using the tidyverse. Features can be seen as properties of time series that allow for a comparison of time series. So, how <em>seasonal</em> is your series? How do certain series perform given their features?</p>
 <p>Here’s a short reproducible example using build in time series:</p>
 <pre class="r"><code>library(feasts)
 library(tsibble)
@@ -107,23 +86,22 @@ tourism %&gt;%
   scale_color_discrete_sequential(palette = &quot;Viridis&quot;) +
   facet_wrap(vars(State)) + 
   theme_bw()</code></pre>
-<p><img src="/post/2019-07-12-favorite-useR-take-aways_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
-<p>We can immediately see from the graph abht holidays are more seasonal than other travel, pl and thattern Australia (WA) has the strongest trends.</p>
-<p>More feature based examples can befoun d in the slides as wend<a href="https://tidyverts.org">tidyverts.org</a>.</p>
+<p><img src="/post/2019-07-12-favorite-useR-take-aways_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>We can immediately see from the graph that holidays are more seasonal than other travel, and that Western Australia (WA) has the strongest trends.</p>
+<p>More feature based examples can be found in the slides and
+online on <a href="https://tidyverts.org">tidyverts.org</a>.</p>
 </div>
 <div id="the-colorspace-package" class="section level2">
 <h2>7. The colorspace package</h2>
-<p>If you’ve ever tried to create a publication ready graph that contains more than 2 or 3 colors you know: fiddling around with colors on your own can be time consuming and frustrating. Some colors are too hard to distinguish (let alone, if you are colorblind.), some combinations look like Chinatown at night.</p>
-<p>The colorspace project got you covered. Colorspace is the ultimate no-nonsense approach to colors and color palettes in R. The approach is comprehensive and very instructive. This does not come as a surprise: listthe of names behind the package around maintainer Achim Zeileis reads like the Ocean’s elevEn of the R Worlw. His talk gave interesting insights into how various three dimensional representation of colors, e.g., HCL vs RGB actually work, but also offered practical, application minded advice.</p>
+<p>If you’ve ever tried to create a publication ready graph that contains more than 2 or 3 colors you know: fiddling around with colors on your own can be time consuming and frustrating. Some colors are too hard to distinguish (let alone, if you are colorblind), some combinations look like Chinatown at night.</p>
+<p>The colorspace project got you covered. Colorspace is the ultimate no-nonsense approach to colors and color palettes in R. The approach is comprehensive and the documentation is very instructive. This does not come as a surprise: the list of names behind the package around maintainer Achim Zeileis reads like the Ocean’s Eleven of the R world. His talk gave interesting insights into how various three dimensional representation of colors, e.g., HCL vs RGB actually work, but also offered practical, application minded advice.</p>
 <p>What I liked best in that regard was the grouping of color palettes into <strong>qualitative</strong> color palettes that
-only change the type of color (hue), sequential single hue palettes, se that change the intensity of the same colorquential multi hue color palettes and diverging palettes.</p>
-<p>that go into two directions, starting from the middle<code>{r} library(colorspace) hcl_palettes(plot = TRUE)</code></p>
+only change the type of color (hue), sequential single hue palettes, that change the intensity of the same color, sequential multi hue color palettes and diverging palettes that go into two directions, starting from the middle.</p>
+<pre class="r"><code>library(colorspace)
+hcl_palettes(plot = TRUE)</code></pre>
+<p><img src="/post/2019-07-12-favorite-useR-take-aways_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <p>There’s even a shiny based colorpicker to compose your very own color palette.</p>
-<div class="figure">
-<img src="colo/img/rpicker.png" alt="colorpicker" />
-<p class="caption">colorpicker</p>
-</div>
-<p>The documentation and additional material are tremendous as well:</p>
+<p>The documentation and the additional material are tremendous as well:</p>
 <ul>
 <li><p><a href="http://www.user2019.fr/static/pres/t253801.pdf">Slides from Achim Zeileis’ talk at useR!2019</a></p></li>
 <li><p><a href="http://colorspace.r-forge.r-project.org/articles/ggplot2_color_scales.html">Website of the project</a></p></li>
@@ -133,16 +111,14 @@ package to create a simple palette. The <em>hcl.colors</em> function ships with 
 </div>
 <div id="osrm-is-great-and-there-is-an-r-package-for-it" class="section level2">
 <h2>8. OSRM is great and there is an R package for it</h2>
-<p>“Modern C++ routing engine for shortest path in road networks” That how project OSRM (Open Streetmap Routing Machine) describes itself on <a href="http://project-osrm.org/">their website</a>. And guess what there’s an R package for it. So what do with it?</p>
-<p>Megan Beckett asked “What can I see from my AirBnB with my running shoes on” and lost no time
-answering the question in her lightning talk. For those of you who enjoyed the idea, but found the lightning talk a bit too lightning I’ve tried to adapt Megan’s Toulouse example to my Zurich office.</p>
+<p>“Modern C++ routing engine for shortest path in road networks” That’s how project OSRM (Open Streetmap Routing Machine) describes itself on <a href="http://project-osrm.org/">their website</a>. And guess what: there’s an R package for it. So what do with it?</p>
+<p>Megan Beckett asked “What can I see from my AirBnB with my running shoes on” and lost no time answering this question in her lightning talk. For those of you who enjoyed the idea, but found the lightning talk a bit too lightning, I’ve tried to adapt Megan’s Toulouse example to my Zurich office.</p>
 <p>Because Megan works on Linux she probably ran the data preparation locally and only used docker for the OSRM server in the end. Doing the same on OSX or even Windows might be a bit tricky and spoil the fun. So here’s how to do the preparation also in fully dockerized fashion.</p>
-<p>But before you start hacking, get your area from <a href="https://www.openstreetmap.org/">Open Street Map</a> and use the export function. I suggest to rename the <em>map</em> file you receive to <em>map.xml</em> and put it in a separate folder.
+<p>But before you start hacking, get your area from <a href="https://www.openstreetmap.org/">Open Street Map</a> and use the export function. I suggest to use the API offered in the export context menu. Rename the <em>map</em> file you received to <em>map.xml</em> and put it in a separate folder.
 Then start the osrm-backend docker container to do the preparation from the folder (that’s the $pwd argument in your docker run command) where your <em>map.xml</em> is located on the host.</p>
 <pre><code>docker run -t -v $(pwd):/data osrm/osrm-backend osrm-extract /data/map.xml -p /opt/foot.lua</code></pre>
 <pre><code>docker run -t --rm -v $(pwd):/data osrm/osrm-backend osrm-contract /data/map.xml.osrm</code></pre>
-<p>This may take a bit depending on the size of your export, the profile (there are foot.lua and car.lua).
-Once you’re done simply fire up the OSRM server in order to use its API from R.</p>
+<p>This may take a bit depending on the size of your export, the profile (there are foot.lua and car.lua). Once you’re done, simply fire up the OSRM server in order to use its API from R.</p>
 <pre><code>docker run -t -i -p 5000:5000 -v $(pwd):/data osrm/osrm-backend osrm-routed /data/map.xml.osrm</code></pre>
 <p>Now you’re finally able to do the fun leaflet part.</p>
 <pre class="r"><code>library(osrm)
@@ -182,9 +158,10 @@ leaflet(data = iso) %&gt;%
 <p>I can only spoil this <a href="https://www.youtube.com/watch?v=xxX7QCll3oc">Eddie Izzardesque</a> stand up performance by <a href="https://twitter.com/csgillespie">Colin Gillespie</a> if I try to describe it. So wait for the video to be online.</p>
 <p>In the meantime <a href="https://www.jumpingrivers.com/t/2019-user-security/">check out the slides</a> (and the intro video in particular).</p>
 </div>
+</div>
 <div id="there-are-6-very-diverse-keynotes-online" class="section level1">
 <h1>10. There are 6(!) very diverse keynotes online</h1>
-<p>Even if you made it to Toulouse you haven’t seen all the keynotes probably. The good news is, the <a href="https://www.youtube.com/channel/UC_R5smHVXRYGhZYDJsnXTwg/featured">R Consortium has it’s one youtube channel</a> and you should definetely add to its 3600+ subscribers if you haven’t done so. From Julia Steward Lowndes opening keynote <em>R for better science in less time</em> to Julien Cornebisse’s <em>AI for good in R and Python Ecosystem</em> all talks are either online already or will be published soon.</p>
+<p>Even if you made it to Toulouse you haven’t seen all the keynotes probably. The good news is, the <a href="https://www.youtube.com/channel/UC_R5smHVXRYGhZYDJsnXTwg/featured">R Consortium has its owntube channel</a> and you should definetely add to its 3600+ subscribers if you haven’t done so. From Julia Steward Lowndes opening keynote <em>R for better science in less time</em> to Julien Cornebisse’s <em>AI for good in R and Python Ecosystem</em> all talks are either online already or will be published soon.</p>
 <p>And you should definitely not miss :) Julie Jossie’s <em>Missing value tour in R</em>. Joe Cheng talked about
 <em>Shiny’s Holy Grail: Interactivity with reproducibility</em> and Martin Morgan is on the record speaking about <em>How Bioconductor advances science while contributing to the R language and community</em>. And to complete a perfect 50-50 split among male and female keynote speakers Bettina Grün gave her talk on <em>Tools for Model-Based Clustering in R</em>.</p>
 <p>I can imagine it will take some time, but every ordinary full talk has been recorded as well and will hopefully be online soon.</p>
