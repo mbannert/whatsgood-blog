@@ -5,6 +5,7 @@ date: "2019-07-12"
 authors: [Matthias Bannert]
 event: useR 2019
 event_url: http://www.user2019.fr/
+slides: https://user2019.netlify.com
 featured: true
 image:
   focal_point: Right
@@ -16,7 +17,7 @@ links:
 location: Toulouse, France
 math: true
 publishDate: "2019-07-01"
-tags: []
+tags: [R, user!2019]
 title: 'useR 2019: timeseriesdb'
 ---
 
