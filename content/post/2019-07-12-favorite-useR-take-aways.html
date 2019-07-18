@@ -52,25 +52,25 @@ todor_package()</code></pre>
 <h1>3. Are you teaching (or onboarding employees)? Check out datasciencebox.org</h1>
 <p>It’s hard to summarize a good summary. So I’ll leave you with what I just tweeted a while ago and hope it makes you visit <a href="https://datasciencebox.org">datasciencebox.org</a>.</p>
 {{% tweet "1148927130711011328" %}}
-<ol start="4" style="list-style-type: decimal">
-<li>Add R Studio addins to give your packages an extra polish</li>
-</ol>
+<div id="add-r-studio-addins-to-give-your-packages-an-extra-polish" class="section level2">
+<h2>4. Add R Studio addins to give your packages an extra polish</h2>
 <p>Even moderately avid R Studio users will have to admit that R Studio continues to have a massive impact when it comes to bringing new users to R. Thanks to the <em>rstudioapi</em> your package can benefit from the exact same tailwind. Addins, macros, snippets and custom shortcuts make life of developers more convenient and the R experience of package endusers much smoother.</p>
 {{% tweet "1148533934776639489" %}}
 <p>Though customizing R Studio is definitely easy to do, a good kickstart like Colin Fay’s workshop always helps. If you couldn’t attend it, I recommend to work through the examples in particular. Working through won’t take long and Colin’s examples are definitely instructive.</p>
 <p><a href="https://speakerdeck.com/colinfay/hacking-rstudio-advanced-use-of-your-favorite-ide">Slides</a></p>
 <p><a href="https://github.com/ColinFay/user2019workshop">Repo</a></p>
 <p><a href="https://github.com/ColinFay/user2019workshop/tree/master/examples">Example of answers to the exercises</a></p>
+</div>
 <div id="there-are-r-conferences-beyond-user-erum-and-uros" class="section level2">
 <h2>5. There are R conferences beyond useR!: eRum and uRos</h2>
-<p>Good news if you did not attend useR!2019, saw all the buzz on twitter and elsewhere and felt like you missed something: There will another useR! <a href="https://twitter.com/user2020stl">useR!2020 in St. Louis</a> is in the making.</p>
+<p>Good news if you did not attend useR!2019, saw all the buzz on twitter and elsewhere and felt like you missed something: There will be another useR! <a href="https://twitter.com/user2020stl">useR!2020 in St. Louis</a> is in the making.</p>
 <p>Plus there is <a href="https://twitter.com/erum2020_conf">eRum</a> which takes place in Europe whenever useR! is on another continent.
-So, if you live in the old world and prefer to travel by train, eRum seems to be pretty cool option as well. It will take place in Milano in May 2020.</p>
+So, if you live in the old world and prefer to travel by train, eRum seems to be a pretty cool option as well. It will take place in Milano in May 2020.</p>
 <p>And if you work in official statistics or anything close to it, uRos in Vienna](<a href="https://www.r-project.ro/conference2020.html" class="uri">https://www.r-project.ro/conference2020.html</a>) is for you. uRos is obviously more of a special interest gathering and way smaller than the big R conferences but (just like Vienna itself) always worth your consideration.</p>
 </div>
 <div id="feature-based-time-series-analysis---the-feasts-package" class="section level2">
 <h2>6. Feature-based time series analysis - the feasts package</h2>
-<p>If there is one name that’s been synonymous to forecasting with R it’s Rob J. Hyndman. Among other things, he and his team presented the idea of feature extraction from time series and how such an extraction can be implemented using the tidyverse. Features can be seen as properties of time series that allow for a comparison of time series. So, how <em>seasonal</em> is your series? How do certain series perform given their features?</p>
+<p>If there is one name that’s been synonymous to forecasting with R, it’s <a href="https://twitter.com/robjhyndman">Rob J. Hyndman</a>. Among other things, he and his team presented the idea of feature extraction from time series and how such an extraction can be implemented using the tidyverse. Features can be seen as properties of time series that allow for a comparison of time series. So, how <em>seasonal</em> is your series? How do certain series perform given their features?</p>
 <p>Here’s a short reproducible example using build in time series:</p>
 <pre class="r"><code>library(feasts)
 library(tsibble)
@@ -96,7 +96,7 @@ online on <a href="https://tidyverts.org">tidyverts.org</a>.</p>
 <p>If you’ve ever tried to create a publication ready graph that contains more than 2 or 3 colors you know: fiddling around with colors on your own can be time consuming and frustrating. Some colors are too hard to distinguish (let alone, if you are colorblind), some combinations look like Chinatown at night.</p>
 <p>The colorspace project got you covered. Colorspace is the ultimate no-nonsense approach to colors and color palettes in R. The approach is comprehensive and the documentation is very instructive. This does not come as a surprise: the list of names behind the package around maintainer Achim Zeileis reads like the Ocean’s Eleven of the R world. His talk gave interesting insights into how various three dimensional representation of colors, e.g., HCL vs RGB actually work, but also offered practical, application minded advice.</p>
 <p>What I liked best in that regard was the grouping of color palettes into <strong>qualitative</strong> color palettes that
-only change the type of color (hue), sequential single hue palettes, that change the intensity of the same color, sequential multi hue color palettes and diverging palettes that go into two directions, starting from the middle.</p>
+only change the type of color (hue), <strong>sequential single hue</strong> palettes, that change the intensity of the same color, <strong>sequential multi hue</strong> color palettes that change both, color and intensity and <strong>diverging</strong> palettes that go into two directions, starting from the middle.</p>
 <pre class="r"><code>library(colorspace)
 hcl_palettes(plot = TRUE)</code></pre>
 <p><img src="/post/2019-07-12-favorite-useR-take-aways_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>

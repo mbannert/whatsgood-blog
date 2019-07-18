@@ -64,7 +64,7 @@ blogdown::shortcode('tweet', '1148927130711011328')
 ```
 
 
-4. Add R Studio addins to give your packages an extra polish
+## 4. Add R Studio addins to give your packages an extra polish
 
 Even moderately avid R Studio users will have to admit that R Studio continues to have a massive impact when it comes to bringing new users to R. Thanks to the *rstudioapi* your package can benefit from the exact same tailwind. Addins, macros, snippets and custom shortcuts make life of developers more convenient and the R experience of package endusers much smoother. 
 
@@ -85,17 +85,17 @@ Though customizing R Studio is definitely easy to do, a good kickstart like Coli
 
 ## 5. There are R conferences beyond useR!: eRum and uRos
 
-Good news if you did not attend useR!2019, saw all the buzz on twitter and elsewhere and felt like you missed something: There will another useR! [useR!2020 in St. Louis](https://twitter.com/user2020stl) is in the making.
+Good news if you did not attend useR!2019, saw all the buzz on twitter and elsewhere and felt like you missed something: There will be another useR! [useR!2020 in St. Louis](https://twitter.com/user2020stl) is in the making.
 
 Plus there is [eRum](https://twitter.com/erum2020_conf) which takes place in Europe whenever useR! is on another continent. 
-So, if you live in the old world and prefer to travel by train, eRum seems to be pretty cool option as well. It will take place in Milano in May 2020. 
+So, if you live in the old world and prefer to travel by train, eRum seems to be a pretty cool option as well. It will take place in Milano in May 2020. 
 
 And if you work in official statistics or anything close to it, uRos in Vienna](https://www.r-project.ro/conference2020.html) is for you. uRos is obviously more of a special interest gathering and way smaller than the big R conferences but (just like Vienna itself) always worth your consideration. 
 
 
 ## 6. Feature-based time series analysis - the feasts package
 
-If there is one name that's been synonymous to forecasting with R it's Rob J. Hyndman. Among other things, he and his team presented the idea of feature extraction from time series and how such an extraction can be implemented using the tidyverse. Features can be seen as properties of time series that allow for a comparison of time series. So, how *seasonal* is your series? How do certain series perform given their features? 
+If there is one name that's been synonymous to forecasting with R, it's [Rob J. Hyndman](https://twitter.com/robjhyndman). Among other things, he and his team presented the idea of feature extraction from time series and how such an extraction can be implemented using the tidyverse. Features can be seen as properties of time series that allow for a comparison of time series. So, how *seasonal* is your series? How do certain series perform given their features? 
 
 Here's a short reproducible example using build in time series:
 
@@ -129,7 +129,7 @@ If you've ever tried to create a publication ready graph that contains more than
 The colorspace project got you covered. Colorspace is the ultimate no-nonsense approach to colors and color palettes in R. The approach is comprehensive and the documentation is very instructive. This does not come as a surprise: the list of names behind the package around maintainer Achim Zeileis reads like the Ocean's Eleven of the R world. His talk gave interesting insights into how various three dimensional representation of colors, e.g., HCL vs RGB actually work, but also offered practical, application minded advice. 
 
 What I liked best in that regard was the grouping of color palettes into **qualitative** color palettes that 
-only change the type of color (hue), sequential single hue palettes, that change the intensity of the same color, sequential multi hue color palettes and diverging palettes that go into two directions, starting from the middle.
+only change the type of color (hue), **sequential single hue** palettes, that change the intensity of the same color, **sequential multi hue** color palettes that change both, color and intensity and **diverging** palettes that go into two directions, starting from the middle.
 
 ```{r}
 library(colorspace)
@@ -137,8 +137,6 @@ hcl_palettes(plot = TRUE)
 ```
 
 There's even a shiny based colorpicker to compose your very own color palette. 
-
-
 The documentation and the additional material are tremendous as well:
 
 - [Slides from Achim Zeileis' talk at useR!2019](http://www.user2019.fr/static/pres/t253801.pdf)
@@ -178,7 +176,7 @@ docker run -t -i -p 5000:5000 -v $(pwd):/data osrm/osrm-backend osrm-routed /dat
 
 Now you're finally able to do the fun leaflet part. 
 
-```{r,message=FALSE,warning=FALSE}
+```{r,message=FALSE,warning=FALSE, cache = TRUE}
 library(osrm)
 library(leaflet)
 library(tidyverse)
