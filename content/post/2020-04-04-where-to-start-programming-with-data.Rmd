@@ -1,0 +1,391 @@
+---
+title: "Where to Start Programming with Data?"
+subtitle: "A Beginner's Guide and List of Resources for Social Scientists"
+author: admin
+date: 2020-04-04
+categories: ["R","beginner","data science","programming"]
+tags: ["R","beginner","data science","programming"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+
+## How to Read this Post -- Be Honest About Your Programming Starting Point
+
+Personal starting points among researchers are likley as 
+
+
+
+
+## Before You Start -- some motivational Links
+
+Find some of my favorite examples and see why it's worth your time to learn programming when you work with data on a regular basis. While the people behind these examples are true masters of their craft, using their software and frameworks is far easier. Even beginners can swiftly come up with impressive stuff. 
+
+- [D3 (Data Driven Documents by Mike Bostock)](https://d3js.org/): State-of-the-art visualization.
+- [seasonal.website by Christoph Sax](http://www.seasonal.website/): An Interactive workbench and documentation to understand seasonal adjustment of time series data.
+- [R Markdown by Yihui Xie](https://rmarkdown.rstudio.com/articles_intro.html): Text + code => create reproducible reports as .pdf, docx or html.
+- [The {quanteda} R package](https://quanteda.io/): An extremely well written and well documented framework to turn text into data. Based on a ERC project.
+- The useR! 2019 conference youTube channel contains great talks. One of my favorite talks is [Colin Gillespie on security](https://www.youtube.com/watch?v=5odJxZj9LE4). 
+
+## Crash Course -- Lesson 1: Understand Your Ecosystem
+
+### Language Wars Are Utterly Useless
+
+The two popular choices for social scientists who want to start programming with data are the [R Language for Statistical Computing](https://r-project.org) and [Python](https://www.python.org). Both languages are good choices. Don't buy into language wars. Further down the road you will learn to understand both languages. Start with the language your close peers use. Reading source code from more experienced developers is one of the best ways to learn. The closer others' work is to what you want to do the bigger the motivation to dig into it. 
+
+That being said, we stick to the R Language for Statistical Computing for this 101 as we have to stick to one language here. R is easy to install and offers a plethora of great online resources. R is an interpreted language which means it is well suited for interactive use. Talk to it, get a result back. Do something with this result give it to R, get a result back. Line by line. Just like pocket calculator. Do not take this for granted. Working with a compiled language is totally different feel. Also, R has one dominant IDE -- that's a text editor on steroids -- almost every researcher uses: the freely available [R Studio](https://rstudio.com/products/rstudio/) Integreated Development Environment (IDE). Once you have downloaded R itself and the R Studio editor/IDE you're good to go. 
+
+### R != R Studio & Other Notes for STATA and SPSS users...
+
+My emphasis on the point that R is not R Studio is not to take anything away from how great R Studio is and how important its role is to the modern R experience. 
+I believe though, to understand this modularity at an early stage is important because many social scientists looking to gear up their programming a notch have worked with data and software before considering R. People who almost solely worked with STATA which common in economics or SPSS which is common in, e.g., psychology, tend to believe there is *one program* as opposed to a *language* which potentially a large amount of editors. For most SPSS users it is very uncommon to use another editor than the one inside the SPSS application. Also, SPSS and STATA are rather programs with extensive macro / scripting capabilities as opposed to full fledged programming languages. As a result STATA syntax is simpler and easier to remember than R syntax in the beginning. Yet, the syntax of these programs is super domain specific. General tasks like string operations or having multiple datasets in memory with these programs makes you feel like washing your dishes with your feet once you have seen a full fledged programming language at work.  
+
+But, domain specific programs like STATA have undoubtedly convenient implementations of econometric models in place. Sometimes it's a good solution --at least for starters-- to do all the data pre-processing and/or merging in R to continue with your STATA models. You even trigger your STATA command from inside R. 
+Also, realizing R is *not* R Studio is an important step along the line to see not all R programs are interactive. Some may very well live on a server and be called automatically every day without human interaction. 
+
+### Extensions packages from CRAN 
+
+The standard resource for R extension packages is the [Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/). Last time I checked, CRAN had more than 15K packages from various fields of research. The [CRAN Task Views](https://cran.r-project.org/web/views/) are a great list of field specific, curated sites that provides an overview of the packages in a respective field. Task views can really help to decide which package to download. Besides making the choice and the online research that comes along with it, downloading a package is usually just a matter of running:
+
+```{r,eval=FALSE}
+# NOTE: the quotes are mandatory here
+# NOTE: installation needs to run only once (unless you update the package)
+# NOTE: the subsequent library call is needed to make the package 
+# available in a particular R session work
+install.packages("the_name_of_the_package")
+library(the_name_of_the_package)
+```
+
+And these are only the list of packages that made the CRAN review process...
+
+### Extensions packages from Github -- Don't use {devtools}!
+
+... there are many many more around on the world's leading open source code repository platform [Github](https://github.com). And guess what, there is an R package for almost everything, even for installing packages from github. Often R projects on Github recommend to use the {devtools} R package to install to install the package directly from Github. But I would NOT recommend to use {devtools} even if the developer of the package I am interested in suggests to do so. This is one trap a beginner could step into, waste time trying to install the package to install packages and get frustrated before she even started. This is because devtools is an extension for package developers and has quite some dependencies which can make installation tricky. If you're unlucky, particularly on Windows, installation of dependencies beyond R can turn into a problem. A better option is to use the lighter {remotes} package:
+
+```{r, eval=FALSE}
+# make sure to install the remotes package from CRAN before.
+install.packages("remotes")
+# This will install the package called tstools from 
+# my github account
+remotes::install_github("mbannert/tstools")
+```
+
+### Bioconductor -- a Package Archive for Biostatistics
+
+Bioconductor has its own community I am not overly familiar with, but I do know they have lots of great packages. Installing a packaging from Bioconductor is fairly easy as well. You will need to download the {BiocManager} package first. 
+
+```{r, eval=FALSE}
+# make sure to install the BiocManager package from CRAN before.
+install.packages("BiocManager")
+# list all available packages
+BiocManager::available()
+# install the A3 packages
+BiocManager::install("A3")
+```
+Note that BioConductor packages can very well depend on CRAN packages which will just be installed automatically when a dependency is resolved. 
+
+
+## Crash Course -- Lesson 2: Getting Started
+
+At the start of this section, I assume you have installed R and R Studio on your local machine or have access to R Studio Server running somewhere. I also assume you are familiar with R Studio's panes and how to switch between 
+**script window** (Ctrl/Cmd+1) and the **console** (Ctrl/Cmd+2).
+I believe you know by now how to run code (Ctrl/Cmd+Enter) selected in the script window without leaving your keyboard for the mouse or touchpad. 
+
+### Basic Data Structures
+
+First, let's get familiar with basic data structures in R. 
+Everything is a vector, even scalars are vectors of length one. The `c()` command let's you concatenate elements into vectors. The assignment operator `<-` (press Alt - in R Studio) assigns values to variables. 
+
+```{r}
+a <- c(1,2,3)
+a
+```
+
+**Matrices** are basically two dimensional vectors. All **columns** of a matrix need to have the **same data type**, i.e., all numerics, all characters and so forth. If that is not the case, elements are coerced into the smallest common denominator which is more often than not the character type.
+
+```{r}
+m <- matrix(1:9,nrow = 3, ncol = 3)
+m
+```
+
+**Data.frame**s are similar to matrices inasmuch as they are typically 2-dimensional and **all columns** have to be of the **same length**. They lift the second restrictions, though:  **data types** may **vary across columns**.
+
+```{r}
+d <- data.frame(first_column = 1:3,
+                second_column = LETTERS[1:3])
+d
+
+```
+Finally, **lists** are even more **flexible**. They allow to nest objects of different data types. Their elements can even contain functions or entire datasets. To illustrate this, let us put all of the objects create before into a list. And that's not enough. R and many of its extension packages ship with demo dataset to illustrate functionality. 
+```{r}
+# load one of the most famous demo datasets
+data(iris)
+# create an empty list and add stuff
+l <- list()
+l$a_vector <- a
+l$a_matrix <- m
+l$a_data.frame <- d
+# add the first 6 lines of the iris dataset
+l$iris <- head(iris)
+l
+```
+
+So far you have seen the assignment operator `<-` which you should **use to create new variables** of any type and the 4 most important data types in base R: **vector, matrix, data.frame and list**. Along the way you might have noticed a few other things I will explain shortly.
+
+### Indexing [], [[]]
+
+When programming with data, the ability to access subsets in simple fashion is very important. In R, square brackets indicate indexing as opposed to ordinary braces `()` which hold parameters of functions or curly braces `{}` which delimit a function body or control structure. 
+
+Consider a vector with 4 elements
+
+```{r}
+b <- c(1,10,20,30)
+b[3]
+```
+
+the above code returns `20` because the index asked for the 3rd element of the vector. Unlike Python or Matlab, R starts counting at 1, not 0. Indexing works for matrices and data.frames, too. Just think `[rows, columns]`:
+
+```{r}
+d[1,]
+```
+
+```{r}
+d[,1]
+```
+
+Leaving an index blank means 'all rows' and/or 'all columns'. Lists have double squared brackets in addition to single ones. `[[1]]` will return the **first element of a list**. A single `[1]` will return a **list** containing the first element of the initial list. 
+
+```{r}
+l[[1]]
+```
+
+```{r}
+l[2]
+```
+
+We've just seen position based indexing. Two other popular forms of indexing are **name based** indexing and **logical indexing**. 
+
+```{r}
+# name based indexing
+l["a_matrix"]
+```
+
+You will also quite often see the `$` operator with lists and data.frames which popular thanks to R Studio's auto complete feature (hit the tab key after you pressed `$` after a data.frame object).
+
+```{r}
+d$second_column
+```
+
+
+```{r}
+# logical indexing
+b[c(TRUE, TRUE, FALSE, TRUE)]
+```
+
+The latter is particularly relevant when you want to use control structures, create your own functions or use filters. There is a lot more to say about R basics, but I guess the above insights should enable you to move around, follow some R discussions and tackle some first challenges. For more comprehensive discussion of data types, indexing and more check the [Chapters 2 & 3 of Official Introduction to R](https://cran.r-project.org/doc/manuals/R-intro.pdf). 
+
+### Functions 
+
+R is a **functional language**. For starters this means: think in functions. Use existing functions and learn how to create your own functions and apply them to your data. 
+A function consists of a **name**, **zero or more parameters**, and a function body. A function is defined once and called often. 
+
+```{r, }
+# function definition
+name_of_the_f <- function(parameter_1 = 3,
+                          another_param_2 = 5){
+  # function body = what the function does
+  result <- parameter_1 * another_param_2
+  # last non-assigned object is automatically returned
+  # so this last line is
+  # aequivalent to 
+  # return(result)
+  result
+}
+
+```
+
+Call your function with different parameters
+
+```{r}
+# returns 20
+name_of_the_f(2,10)
+```
+
+```{r}
+# returns 5
+name_of_the_f(1)
+```
+
+```{r}
+# returns 30
+name_of_the_f(another_param_2 = 10)
+```
+
+Note how input parameters are sequentially mapped to the parameters of a functions definition. When parameters are not specified, defaults are being used. In case there is no input parameter and no default the code will break. You can also explicitly assign values to the parameters. 
+
+In R it is very common to pass functions to another function. The apply function family is a good example of this approach.
+`lapply` stands for 'list apply' and applies one function to all elements of a list. 
+
+
+```{r}
+data(iris)
+data(mtcars)
+ll <- list(ds1 = iris,
+           ds2 = mtcars)
+
+# returns a list of summaries
+lapply(ll, summary)
+```
+
+Now it's your turn! Seriously. Often, newcomers who watch an experienced programmer say things like 'How can she remember all of this code?'. They seem to suggest that good programmers just got a lot of capacity to memorize syntax. Admittedly, just like with a natural language you need to learn a bit of vocabular to move around. But it's a lot less to thoroughly remember than you might think. The stuff discussed above is already a large chunk of what you really need to be familiar with -- at least for starters. Almost everything else can be looked while you start to tackle basic real world data problems. 
+
+That being said, one of your first tasks could be to make yourself familiar with a few more basic functions that help you to move around. `?function_name` opens up to the R help window showing a function's documentation. Many functions come with examples at the end of its documentation. Running these examples line by line will greatly help you if you are more of an applied mind. 
+
+```{r, eval=FALSE}
+head()
+tail()
+str()
+ls()
+sum()
+mean()
+summary()
+lm()
+```
+
+## Crash Course Lesson 3: Advanced Ecosystems Inside R
+
+One thing about R that you should know rather sooner than later is that there are at least **two major approaches besides base R** which are an ecosystem of their own: the **tidyverse** and **data.table**.
+
+### The tidyverse
+
+The tidyverse (inofficially called the Hadleyverse after its iniator Hadley Wickham) is a bunch of R packages that follow the same general idea: **clean code, tidy data**. Many claim that you should right away learn the tidyverse and rather leave base R alone. To me,  the tidyverse is still an extension and even if you choose to put all your money on the tidyverse, it won't hurt to learn the minimal pieces of base R described above. 
+
+The [tidyverse is documented and marketed](https://www.tidyverse.org/) very well including introductory resources, so I won't go past a very minimal description here.
+
+The most important packages of the tidyverse are `{dplyr}` and `{ggplot2}` and their respective imports (other packages they make use of). The `{dplyr}` package allows you to use a speedier version of the **data.frame** called **tibble**. The basic idea is not to copy the entire data.frame when a single element is changed. Base R does just this. 
+In the tidyverse the idea described above is implement around the pipe `%>%` operator. In coding to pipe means to direct the result of one function call to the next. 
+
+```{r, message=FALSE}
+library(dplyr)
+mtcars %>% 
+  filter(cyl == 6) %>% 
+  select(mpg, cyl, gear)
+```
+
+The second part of the tidyverse is equally well documented, gets a quick mention here as it is one of the most popular standouts of the R language: the [{ggplot2} data visualization package](https://ggplot2.tidyverse.org/).
+The {ggplot2} package is the R implementation of a concept called grammer of graphics. The basic idea is to approach graphics layer by layer: an axis layer, a points layer on top, maybe another line layer on top of that and so forth. 
+
+```{r, message=FALSE}
+library(ggplot2)
+gg <- ggplot(mtcars, aes(x = mpg,
+                         y = hp,
+                         color = as.factor(cyl)))
+gg + 
+  geom_point() +
+  theme_minimal() +
+  scale_color_viridis_d()
+  
+
+```
+
+
+### data.table
+
+Another very powerful ecosystem within the R world is 
+Matt Dowle's **{data.table}** package. It's the fastest data.frame alternative R has. Again, the idea is to avoid copying an entire data.frame with potentiall millions of rows when a single element is changed. R {data.table} lets the much quicker C language do the R job but provides an R interface to it. The implementation has an SQL approach in mind and thus comes intuitive to people who worked with an SQL database before. 
+
+When you are used to working with base R, **be aware!** The {data.table} package modifies objects in place. {data.table} ships with a very fast .csv I/O functions (write/read) which can be a good reason to use data.table if you have to deal with large .csv files.
+
+```{r, message=FALSE}
+library(data.table)
+input <- "https://raw.githubusercontent.com/Rdatatable/data.table/master/vignettes/flights14.csv"
+
+flights <- fread(input)
+dim(flights)
+
+# get all flights from JFK in June
+ans <- flights[origin == "JFK" & month == 6L]
+head(ans)
+
+
+```
+The official CRAN repository offers an [introductory piece on data.table](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html
+). 
+
+
+
+## List of Resources 
+
+I've composed a list of links I wish had been around when I started learning how to program with data. It's not a complete list, but I am confident, there is no BS on that list. 
+
+### Introduction & Help Focused
+
+- [Introduction to RMarkdown -- Reproducible Documents with R](https://rmarkdown.rstudio.com/articles_intro.html)
+
+- [R Markdown the Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+
+- [Official Introduction to R](https://cran.r-project.org/doc/manuals/R-intro.pdf) 
+
+- [R Studio's Collection of cheatsheets](https://rstudio.com/resources/cheatsheets/)
+
+## Comprehensive, General Reads
+
+- [Advanced R by Hadley Wickham](https://adv-r.hadley.nz/)
+More fundamental than its title suggests. Well written documentation. Probably the right dose of comprehensive but applied enough to extend the audience to more than R gurus.
+
+- [How R searches and find stuff](http://blog.obeautifulcode.com/R/How-R-Searches-And-Finds-Stuff/): This post was recommended to me by Martin Maechler years ago and I never forgot about it since. Martin is an R Core member who knew more about R ~20 years ago than most of us know by now. The fact he recommended this post knighted it for me. It may be very nerdy and advanced from a beginners point of view, yet it is insightful and inclusive if you want to read some deeper thoughts about the language.
+
+- [R for Data science](https://r4ds.had.co.nz/)
+Applied, on the problem book by Hadley Wickham/
+
+- [ggplot2 documentation -- Grammar of Graphics](https://ggplot2.tidyverse.org/)
+
+- [Bookdown Collection of free R Books](https://bookdown.org/)
+
+### Special Interest (Visualization, Textanalysis, ... ) 
+
+- [quanteda documentation -- Text quantification](https://quanteda.io/)
+- [quanteda tutorials website](https://tutorials.quanteda.io/)
+
+- [A Comprehensive Guide to the Grammar of Graphics for Effective Visualization of Multi-dimensional Data](https://towardsdatascience.com/a-comprehensive-guide-to-the-grammar-of-graphics-for-effective-visualization-of-multi-dimensional-1f92b4ed4149)
+- [Shiny -- R Based Web Application Framework](https://shiny.rstudio.com/)
+- [shinydashboard -- simple R package to build dashboards with shiny](https://rstudio.github.io/shinydashboard/)
+
+
+### Tasks and Puzzles
+
+- [Hacking for Historians Session 2 -- Breaking down code](https://dh2019-session2.netlify.com/): A very basic but realistic, hands-on task from a course I taught for a beginner audience a while ago: Process data from an API.
+
+
+### Community and News Digests
+
+> "I came for the software and stayed for community".
+
+The above David Allen (David works for Revolution Analytics which was acquired by Microsoft) quote summarizes one of the biggest strengths of the R Language: its one of kind community. The R community is incredibly inclusive, diversity has been nurtured for years and is on top of all that competent. 
+
+- [Stackoverflow Questions Tagged R](https://stackoverflow.com/questions/tagged/r): Got an R programming question? Ask it here, but be sure to check the archive. More often than not it has already been answered on stackoverflow.com. Not finding it on SO, is often also an indicator you're on the wrong train and the wrong track. 
+
+- [dataandme -- Mara Averick on twitter, the community's most popular news digest](https://twitter.com/dataandme)
+
+- [R Bloggers -- Putting hundreds of R related blogs in one place](https://www.r-bloggers.com/)
+
+- [R Foundation](https://www.r-project.org/foundation/):
+Founded by the R Development Core Team to Provide support for the R project, provide a reference point and hold and administer the copyright of R software and documentation.
+
+- [R Ladies Global -- R-Ladies is a world-wide organization to promote gender diversity in the r community](https://rladies.org/)
+
+- [FoRwards -- R Foundation taskforce on women and other under-represented groups](https://forwards.github.io/about/)
+
+
+
+## Feedback?
+
+Miss your favorite ressource? What's your approach to onboarding newcomers to programming with data. I'm curious. Let me know - hit me on [Twitter](https://twitter.com/whatsgoodio). chirp chirp.
+
+
+
+
+
+
