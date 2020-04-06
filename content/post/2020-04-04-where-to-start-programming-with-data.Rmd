@@ -12,9 +12,13 @@ knitr::opts_chunk$set(collapse = TRUE)
 ```
 
 
-## How to Read this Post -- Be Honest About Your Programming Starting Point
+I want to learn how to program with data. Can you point me to a few good reads for beginners? Should I learn R or Python? What's the best way to get started? Where should I begin? Admittedly, I don't have any data to back that claim up, but I feel the number of get-me-started-with-coding requests has increased ever since many other activities were put on hold for the forseeable future. 
 
-Personal starting points among researchers are likley as 
+Learning a programming language seems even more reasonable to many researchers. I don't know whether it's a fear of missing out on all those hackathons or a slowdown in people's schedules that let's them address the thing they wanted to do for a long time. 
+
+Invididual motivation may be as heterogeneous as personal starting points -- in particular for academic researchers who worked with data before. There is hardly a clean slate, some real experience here and some semi-knowledge there. But that's fine. I hope this article helps you improve your starting point and point you to what's next after getting started. 
+
+If you came to ```r emo::ji("cherries")```-pick, you're welcome to. Find a list of useful links at the end of this post. 
 
 
 
