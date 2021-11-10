@@ -1,0 +1,57 @@
+---
+title: "Teaching"
+description: |
+  I believe teaching is an essential part of research. To me, teaching is so much more than 'just' onboarding the next generation of researchers. Interaction with learners adds an extra perspective for instructors and helps scholars to communicate better. I am thankful for the great output *and* input I've received through my courses and workshops and enjoy teaching a lot. Though not a fulltime lecturer, I try to teach workshop or course every semester (or at least every year). 
+---
+
+
+## The Hacking for Social Sciences Project (ongoing)
+
+The Hacking for Social Sciences project (h4sci) intends to help scholars of Social Sciences and the Humanities gain a carpentry level understanding of applied programming with data as well as big picture view of the open source software ecosystem and infrastructure.
+
+Project website: [https://h4sci.github.io](https://h4sci.github.io)
+
+Book (in the making): [https://h4sci.github.io/h4sci-book/](https://h4sci.github.io/h4sci-book/)
+
+The course is currently taught at *ETH Zurich** as part of the D-MTEC **PhD program**. The course is open to ambitious master students and guests. [ETH course catalog](http://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2021W&ansicht=KATALOGDATEN&lerneinheitId=146390&lang=en)
+
+## Hacking Social Media 
+
+Guest lecture on using social media in research at University of Applied Sciences and Arts Northwestern Switzerland.
+
+
+## Digital History
+
+Full semester data science course for students of humanities at the department of history at the university of Basel. 
+
+## Interactive Statistics and Data Visualization with R and Shiny
+
+
+## Exploring Statistics with R
+
+
+## Webdatanet Training School 
+
+
+## Principles of Econometrics Tutorial with R
+
+R based to tutorial for principles of Econometrics taught at ETH Zurich by Prof. Dr. Jan-Egbert Sturm.
+
+
+## Workshops in the Public Sector
+
+
+
+## Workshops and Consulting in the Automotive Industry 
+
+
+
+
+
+
+
+
+
+
+
+

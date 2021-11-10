@@ -1,0 +1,52 @@
+{
+  "articles": [
+    {
+      "path": "index.html",
+      "title": "whatsgood?",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-11-10T09:48:52+01:00"
+    },
+    {
+      "path": "projects.html",
+      "title": "Projects",
+      "description": "Many of our activities are labelled projects today. As a research software engineer many of my projects ideally result in an open source software package. For all my other work that cannot be easily bundled into package and be deployed somewhere, I am happy to be able to summarize them as 'projects'.",
+      "author": [],
+      "contents": "\nuseR! working group\nWhat Workers Want: National Research Program 77\nHacking for Social Sciences\nuseR! 2021 global\nSwissdata - Making Public Data Public\nDigital Lives (SNF)\nMigration of the KOF Time Series Database\nKOF Analysen publication.\n\n\n\n",
+      "last_modified": "2021-11-10T09:47:14+01:00"
+    },
+    {
+      "path": "software.html",
+      "title": "Software Projects",
+      "description": "When it comes to software development my motto is open by default. That is, I need a good reason to not publish the source code of the software I write. Currently, I do programming with data and therefore mostly SQL, R and Python these days. Expect some web development, data visualization and devOps routine blended in from time to time. ",
+      "author": [],
+      "contents": "\ntimeseriesdb R package\nRAdwords R Package\n\n\n\n",
+      "last_modified": "2021-11-09T23:58:53+01:00"
+    },
+    {
+      "path": "talks.html",
+      "title": "Talks",
+      "description": "I enjoy exchange with students, partners from the public and private sector as well as with the open source community at large. On this site I try to keep track and link to slides, videos and other material related to my blabla.  ",
+      "author": [],
+      "contents": "\nSchweizer Statistiktage: The {kofdata} API wrapper R package\nuRos (R in Official Statistics)\neRum: R Alonside Airflow, Docker and Gitlab CI\nZurich R User Group: A useR! 2019 travel report\nuseR! 2019: The {timeseriesdb} R package\ntechTalk: R in Production - The R Ecosystem @KOF\nadminR: Economic Statistics - R in production\nSchweizer Statistiktage: Open Source Driven Data Pipelines\n\n\n\n",
+      "last_modified": "2021-11-10T09:26:28+01:00"
+    },
+    {
+      "path": "teaching.html",
+      "title": "Teaching",
+      "description": "I believe teaching is an essential part of research. To me, teaching is so much more than 'just' onboarding the next generation of researchers. Interaction with learners adds an extra perspective for instructors and helps scholars to communicate better. I am thankful for the great output *and* input I've received through my courses and workshops and enjoy teaching a lot. Though not a fulltime lecturer, I try to teach workshop or course every semester (or at least every year). ",
+      "author": [],
+      "contents": "\nThe Hacking for Social Sciences Project (ongoing)\nThe Hacking for Social Sciences project (h4sci) intends to help scholars of Social Sciences and the Humanities gain a carpentry level understanding of applied programming with data as well as big picture view of the open source software ecosystem and infrastructure.\nProject website: https://h4sci.github.io\nBook (in the making): https://h4sci.github.io/h4sci-book/\nThe course is currently taught at *ETH Zurich as part of the D-MTEC PhD program**. The course is open to ambitious master students and guests. ETH course catalog\nHacking Social Media\nGuest lecture on using social media in research at University of Applied Sciences and Arts Northwestern Switzerland.\nDigital History\nFull semester data science course for students of humanities at the department of history at the university of Basel.\nInteractive Statistics and Data Visualization with R and Shiny\nExploring Statistics with R\nWebdatanet Training School\nPrinciples of Econometrics Tutorial with R\nR based to tutorial for principles of Econometrics taught at ETH Zurich by Prof. Dr. Jan-Egbert Sturm.\nWorkshops in the Public Sector\nWorkshops and Consulting in the Automotive Industry\n\n\n\n",
+      "last_modified": "2021-11-10T09:04:21+01:00"
+    },
+    {
+      "path": "whoami.html",
+      "title": "Hi, my name is Matt.",
+      "description": "Some additional details about the blog",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-11-10T09:48:46+01:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}

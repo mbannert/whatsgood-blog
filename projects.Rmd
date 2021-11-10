@@ -1,0 +1,27 @@
+---
+title: "Projects"
+description: |
+  Many of our activities are labelled projects today. As a research software engineer many of my projects ideally result in an open source software package. For all my other work that cannot be easily bundled into package and be deployed somewhere, I am happy to be able to summarize them as 'projects'.
+---
+
+
+### useR! working group
+
+### What Workers Want: National Research Program 77
+
+### Hacking for Social Sciences
+
+### useR! 2021 global
+
+### Swissdata - Making Public Data Public
+
+### Digital Lives (SNF)
+
+### Migration of the KOF Time Series Database
+
+KOF Analysen publication. 
+
+
+
+
+

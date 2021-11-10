@@ -1,0 +1,36 @@
+[
+  {
+    "path": "posts/2021-10-26-coaching-in-education/",
+    "title": "Coaching in Education",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Matt Bannert",
+        "url": "https://whatsgood.io"
+      }
+    ],
+    "date": "2021-10-26",
+    "categories": [],
+    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-10-26T22:34:06+02:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to whatsgood? Stats. Hoops. Trash.",
+    "description": "Welcome to our new blog, whatsgood? Stats. Hoops. Trash.. We hope you enjoy \nreading what we have to say!",
+    "author": [
+      {
+        "name": "Matt Bannert",
+        "url": "https://whatsgood.io"
+      }
+    ],
+    "date": "2021-10-26",
+    "categories": [],
+    "contents": "\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-10-26T22:11:09+02:00",
+    "input_file": {}
+  }
+]

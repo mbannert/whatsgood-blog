@@ -1,0 +1,22 @@
+---
+title: "Talks"
+description: |
+  I enjoy exchange with students, partners from the public and private sector as well as with the open source community at large. On this site I try to keep track and link to slides, videos and other material related to my blabla.  
+---
+
+
+### Schweizer Statistiktage: The {kofdata} API wrapper R package
+
+### uRos (R in Official Statistics)
+
+### eRum: R Alonside Airflow, Docker and Gitlab CI
+
+### Zurich R User Group: A useR! 2019 travel report
+
+### useR! 2019: The {timeseriesdb} R package
+
+### techTalk: R in Production - The R Ecosystem @KOF
+
+### adminR: Economic Statistics - R in production
+
+### Schweizer Statistiktage: Open Source Driven Data Pipelines
