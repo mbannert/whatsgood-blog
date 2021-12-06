@@ -1,25 +1,52 @@
 ---
 title: "Projects"
 description: |
-  Many of our activities are labelled projects today. As a research software engineer many of my projects ideally result in an open source software package. For all my other work that cannot be easily bundled into package and be deployed somewhere, I am happy to be able to summarize them as 'projects'.
+  Many of our activities are labelled projects today. As a research software engineer my projects ideally result in an open source software package. On this page, I'll show you my work that cannot be bundled into a package and be deployed somewhere. 
 ---
 
 
 ### useR! working group
 
+Co-chairing a conference as big as useR! 2021 and working together with a group of enthusiastic volunteers is almost certainly an adventurous experience in itself. If circumstances make you extend the original group, build trust and turn a group of local organizers into a truly global team all while moving on with the organization, that experience becomes even more unique. 
+
+Out of the impact of an all virtual useR! 2021 
+which has undoubtedly been the most global useR! conference ever, the team of global coordinators is looking to establish a permanent useR! working group. After reaching so many people that could not have attended an in person conference, it is safe to say that a strong online component is there to stay. To help develop this online component further a new useR! working group is in its seeding phase. 
+
+Together with [@hturner](https://twitter.com/heathrturnr), I've administered a Google Season of Docs project to document the useR! conference. The project resulted in a [knowledgebase](https://rconf.gitlab.io/userknowledgebase/) and an [information dashboard]([knowledgebase](https://rconf.gitlab.io/userinfoboard/))to help new organizers stop reinventing the wheel and off to a kickstart. 
+
+
+
 ### What Workers Want: National Research Program 77
+
+Together with the head KOF's labor market group, Michael Siegenthaler, I am a co-PI in an SNF funded National Research Program 77 project. The project makes use of novel data from a public employment platform to investigate how unemployed job seekers search for work online. The aim is to better understand trends on the Swiss labour market and the success factors of job searches, and to optimise work placement.
+
+[SNF Research database](https://p3.snf.ch/project-187229#) | [Project Page SNF](https://www.nfp77.ch/en/portfolio/strategies-for-job-hunting-on-online-job-platforms/)
 
 ### Hacking for Social Sciences
 
+Hacking for Social Sciences is a PhD level course, an online book and a mission to teach young research the data automation tricks I wish I had known when I started my PhD. 
+
+[project postcard](https://h4sci.github.io/) | [online book](h4sci.github.io/h4sci-book/)
+
+
 ### useR! 2021 global
 
+In 2021, I was a global coordinator (co-chair) of useR!, the annual conference of the R Project for Statistical Computing.
+
+[useR! 2021 website](https://user2021.r-project.org/) | [useR! 2021 blog](https://user2021.r-project.org/blog/)
+
 ### Swissdata - Making Public Data Public
+
+Swissdata is a joint effort with @christop_sax to make publicly available data machine readable and therefore processible. We read adverse spreadsheets and turn them into a smooth-sailing pair of long format .csv and .json (or .yaml) meta information. We cooperate with local and federal administration in Switzerland to re-publish information in machine readable fashion. 
+
+[swissdata demo](https://github.com/swissdata/demo)
+
 
 ### Digital Lives (SNF)
 
 ### Migration of the KOF Time Series Database
 
-KOF Analysen publication. 
+
 
 
 
