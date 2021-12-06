@@ -2,10 +2,10 @@
   "articles": [
     {
       "path": "index.html",
-      "title": "whatsgood?",
+      "title": "Hi, I am Matthias.",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-11-10T09:48:52+01:00"
+      "last_modified": "2021-12-06T19:11:06+01:00"
     },
     {
       "path": "projects.html",
@@ -26,26 +26,26 @@
     {
       "path": "talks.html",
       "title": "Talks",
-      "description": "I enjoy exchange with students, partners from the public and private sector as well as with the open source community at large. On this site I try to keep track and link to slides, videos and other material related to my blabla.  ",
+      "description": "I enjoy exchange with students, partners from the public and private sector as well as with the open source community at large. On this site I keep track of my blabla  and related material such as slides or videos.",
       "author": [],
-      "contents": "\nSchweizer Statistiktage: The {kofdata} API wrapper R package\nuRos (R in Official Statistics)\neRum: R Alonside Airflow, Docker and Gitlab CI\nZurich R User Group: A useR! 2019 travel report\nuseR! 2019: The {timeseriesdb} R package\ntechTalk: R in Production - The R Ecosystem @KOF\nadminR: Economic Statistics - R in production\nSchweizer Statistiktage: Open Source Driven Data Pipelines\n\n\n\n",
-      "last_modified": "2021-11-10T09:26:28+01:00"
+      "contents": "\nThe {kofdata} API wrapper R package (adminR Lugano, 2021)\nPresentation of the {kofdata} R package at the adminR meetup during Statistiktage 2021. {kofdata} is an R layer around the KOF data REST API for data transder.\nslides | video\nThe {timeseriesdb} R package (uRos, 2020)\nslides | video\nFrom Airflow to Docker (uRos, 2020)\nLightning presentation held at uRos - R in Official statistics. I talk about R in an Open Source Production Environment.\nslides | video\nR Alonside Airflow, Docker and Gitlab CI (eRum, 2020)\nI presented the Open Source ecosytem we have set up at KOF Swiss Economic Institute and discussed how R behaves in this environment. The talk was given as part of the in production track at eRum 2020.\nvideo\nuseR! 2019 Travel Report (ZH R Users Meetup, 2019)\nThe #train2useR journey started at Zurich main station. Together with other R enthusiasts, I took the train to Toulouse, France. When we were back in Zurich we had plenty to report from decent donuts, to superb talks and wrecked trains.\n\nOK. Now this: 🚄🚫🔌,📶🇫🇷 > 🚅⚡=> 🚌. Tired af, but happy to be moving again. Started the conference on the bus now. 🤓 hope y'all got late registration tomorrow @UseR2019_Conf #zzz #rstats #toulouse #bus2user pic.twitter.com/2N1yyGbad6— Matt Bannert (@whatsgoodio) July 8, 2019\n\n\nevent | slides\nuseR! 2019: The {timeseriesdb} R package\nAt useR! 2019 in Toulouse, France, I presented plans for a new release of the {timeseriesdb} R package. Fun fact, I was the first to come up with a user2019 subdomain at netlify ;)\nslides | video\ntechTalk (invited, Aarau, 2019)\nI discussed R in Production - The R Ecosystem @KOF with an audience from cantonal administration of the Swiss Canton of Aargau.\nadminR: Economic Statistics (Zurich, 2019)\n\nMany thanks to @KOFETH and @whatsgoodio for the superb organization of the 2nd adminR meetup! #rstats in🇨🇭official statistics https://t.co/LZhdIOBF3h— adminR: R in Swiss Official Statistics (@adminR3) March 14, 2019\n\n\nI co-hosted adminR 2019 and gave the host talk at adminR - Economic Statistics.\nevent\nSchweizer Statistiktage: Open Source Driven Data Pipelines (zurich, 2018)\n\n\n\n",
+      "last_modified": "2021-12-06T20:51:32+01:00"
     },
     {
       "path": "teaching.html",
       "title": "Teaching",
       "description": "I believe teaching is an essential part of research. To me, teaching is so much more than 'just' onboarding the next generation of researchers. Interaction with learners adds an extra perspective for instructors and helps scholars to communicate better. I am thankful for the great output *and* input I've received through my courses and workshops and enjoy teaching a lot. Though not a fulltime lecturer, I try to teach workshop or course every semester (or at least every year). ",
       "author": [],
-      "contents": "\nThe Hacking for Social Sciences Project (ongoing)\nThe Hacking for Social Sciences project (h4sci) intends to help scholars of Social Sciences and the Humanities gain a carpentry level understanding of applied programming with data as well as big picture view of the open source software ecosystem and infrastructure.\nProject website: https://h4sci.github.io\nBook (in the making): https://h4sci.github.io/h4sci-book/\nThe course is currently taught at *ETH Zurich as part of the D-MTEC PhD program**. The course is open to ambitious master students and guests. ETH course catalog\nHacking Social Media\nGuest lecture on using social media in research at University of Applied Sciences and Arts Northwestern Switzerland.\nDigital History\nFull semester data science course for students of humanities at the department of history at the university of Basel.\nInteractive Statistics and Data Visualization with R and Shiny\nExploring Statistics with R\nWebdatanet Training School\nPrinciples of Econometrics Tutorial with R\nR based to tutorial for principles of Econometrics taught at ETH Zurich by Prof. Dr. Jan-Egbert Sturm.\nWorkshops in the Public Sector\nWorkshops and Consulting in the Automotive Industry\n\n\n\n",
-      "last_modified": "2021-11-10T09:04:21+01:00"
+      "contents": "\nETH PhD Program: Hacking for Social Sciences\nThe Hacking for Social Sciences course is part of the hacking for social sciences project (h4sci) and intends to help scholars of Social Sciences and the Humanities gain a carpentry level understanding of applied programming with data as well as big picture view of the open source software ecosystem and infrastructure.\nProject website: https://h4sci.github.io\nBook (in the making): https://h4sci.github.io/h4sci-book/\nThe course is currently taught at *ETH Zurich as part of the D-MTEC PhD program**. The course is open to ambitious master students and guests. ETH course catalog\nHacking Social Media\nGuest lecture on using social media in research at University of Applied Sciences and Arts Northwestern Switzerland.\nDigital History\nFull semester data science course for students of humanities at the department of history at the university of Basel.\nInteractive Statistics and Data Visualization with R and Shiny\nExploring Statistics with R\nWebdatanet Training School\nPrinciples of Econometrics Tutorial with R\nR based to tutorial for principles of Econometrics taught at ETH Zurich by Prof. Dr. Jan-Egbert Sturm.\nWorkshops in the Public Sector\nWorkshops and Consulting in the Automotive Industry\n\n\n\n",
+      "last_modified": "2021-11-10T15:41:20+01:00"
     },
     {
       "path": "whoami.html",
       "title": "Hi, my name is Matt.",
-      "description": "Some additional details about the blog",
+      "description": "I am research software engineer at ETH Zurich, Switzerland. I contribute actively to open source software and the R Project for Statistical Computing in particular. At work, I design solutions for state of the art data processing, management and dissemination. I am Co-PI in a SNF funded National research program ang global coordinator for the useR! conference. ",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-11-10T09:48:46+01:00"
+      "last_modified": "2021-11-10T15:54:43+01:00"
     }
   ],
   "collections": ["posts/posts.json"]

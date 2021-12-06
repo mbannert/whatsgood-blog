@@ -3,6 +3,12 @@ title: "whatsgood?"
 description: |
   Stats. Hoops. Trash.
 output_dir: "_site"
+cookie_consent:
+  style: simple
+  type: express
+  palette: light
+  lang: en
+  cookies_policy: url
 navbar:
   right:
     - text: "teaching"

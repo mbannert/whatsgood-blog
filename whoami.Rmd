@@ -1,7 +1,7 @@
 ---
 title: "Hi, my name is Matt."
 description: |
-  Some additional details about the blog
+  I am research software engineer at ETH Zurich, Switzerland. I contribute actively to open source software and the R Project for Statistical Computing in particular. At work, I design solutions for state of the art data processing, management and dissemination. I am Co-PI in a SNF funded National research program ang global coordinator for the useR! conference. 
 ---
 
 ```{r setup, include=FALSE}
