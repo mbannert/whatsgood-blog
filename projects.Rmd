@@ -12,7 +12,7 @@ Co-chairing a conference as big as useR! 2021 and working together with a group 
 Out of the impact of an all virtual useR! 2021 
 which has undoubtedly been the most global useR! conference ever, the team of global coordinators is looking to establish a permanent useR! working group. After reaching so many people that could not have attended an in person conference, it is safe to say that a strong online component is there to stay. To help develop this online component further a new useR! working group is in its seeding phase. 
 
-Together with [@hturner](https://twitter.com/heathrturnr), I've administered a Google Season of Docs project to document the useR! conference. The project resulted in a [knowledgebase](https://rconf.gitlab.io/userknowledgebase/) and an [information dashboard]([knowledgebase](https://rconf.gitlab.io/userinfoboard/))to help new organizers stop reinventing the wheel and off to a kickstart. 
+Together with @[hturner](https://twitter.com/heathrturnr), I've administered a Google Season of Docs project to document the useR! conference. The project resulted in a [knowledgebase](https://rconf.gitlab.io/userknowledgebase/) and an [information dashboard]([knowledgebase](https://rconf.gitlab.io/userinfoboard/))to help new organizers stop reinventing the wheel and off to a kickstart. 
 
 
 

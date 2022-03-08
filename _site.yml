@@ -11,7 +11,7 @@ cookie_consent:
   cookies_policy: url
 navbar:
   right:
-    - text: "teaching"
+    - text: "teaching & workshops"
       href: teaching.html
     - text: "talks"
       href: talks.html

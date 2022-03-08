@@ -7,7 +7,7 @@ description: |
 
 ### The {kofdata} API wrapper R package (adminR Lugano, 2021)
 
-Presentation of the {kofdata} R package at the adminR meetup during Statistiktage 2021. {kofdata} is an R layer around the KOF data REST API for data transder. 
+Presentation of the {kofdata} R package at the adminR meetup during Statistiktage 2021. {kofdata} is an R layer around the KOF data REST API for data transfer. 
 
 [slides](https://matt-talks.github.io/adminR-lugano-2021/#2) | [video](https://www.youtube.com/watch?v=VJC-VU4g1KA) 
 

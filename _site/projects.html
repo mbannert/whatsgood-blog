@@ -56,7 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -77,13 +77,14 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
 code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
+
 
   <!--radix_placeholder_meta_tags-->
   <title>whatsgood?: Projects</title>
@@ -1862,7 +1863,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -2077,7 +2081,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
-<a href="teaching.html">teaching</a>
+<a href="teaching.html">teaching &amp; workshops</a>
 <a href="talks.html">talks</a>
 <a href="projects.html">projects</a>
 <a href="software.html">software</a>
@@ -2103,30 +2107,75 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1>Projects</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Many of our activities are labelled projects today. As a research software engineer my projects ideally result in an open source software package. On this page, I’ll show you my work that cannot be bundled into a package and be deployed somewhere.</p></p>
+<p><p>Many of our activities are labelled projects today. As a research
+software engineer my projects ideally result in an open source software
+package. On this page, I’ll show you my work that cannot be bundled into
+a package and be deployed somewhere.</p></p>
 </div>
 
 
 <div class="d-article">
 <h3 id="user-working-group">useR! working group</h3>
-<p>Co-chairing a conference as big as useR! 2021 and working together with a group of enthusiastic volunteers is almost certainly an adventurous experience in itself. If circumstances make you extend the original group, build trust and turn a group of local organizers into a truly global team all while moving on with the organization, that experience becomes even more unique.</p>
-<p>Out of the impact of an all virtual useR! 2021 which has undoubtedly been the most global useR! conference ever, the team of global coordinators is looking to establish a permanent useR! working group. After reaching so many people that could not have attended an in person conference, it is safe to say that a strong online component is there to stay. To help develop this online component further a new useR! working group is in its seeding phase.</p>
-<p>Together with <span class="citation" data-cites="hturner">[@hturner]</span>(<a href="https://twitter.com/heathrturnr" class="uri">https://twitter.com/heathrturnr</a>), I’ve administered a Google Season of Docs project to document the useR! conference. The project resulted in a <a href="https://rconf.gitlab.io/userknowledgebase/">knowledgebase</a> and an <a href="%5Bknowledgebase%5D(https://rconf.gitlab.io/userinfoboard/)">information dashboard</a>to help new organizers stop reinventing the wheel and off to a kickstart.</p>
-<h3 id="what-workers-want-national-research-program-77">What Workers Want: National Research Program 77</h3>
-<p>Together with the head KOF’s labor market group, Michael Siegenthaler, I am a co-PI in an SNF funded National Research Program 77 project. The project makes use of novel data from a public employment platform to investigate how unemployed job seekers search for work online. The aim is to better understand trends on the Swiss labour market and the success factors of job searches, and to optimise work placement.</p>
-<p><a href="https://p3.snf.ch/project-187229#">SNF Research database</a> | <a href="https://www.nfp77.ch/en/portfolio/strategies-for-job-hunting-on-online-job-platforms/">Project Page SNF</a></p>
+<p>Co-chairing a conference as big as useR! 2021 and working together
+with a group of enthusiastic volunteers is almost certainly an
+adventurous experience in itself. If circumstances make you extend the
+original group, build trust and turn a group of local organizers into a
+truly global team all while moving on with the organization, that
+experience becomes even more unique.</p>
+<p>Out of the impact of an all virtual useR! 2021 which has undoubtedly
+been the most global useR! conference ever, the team of global
+coordinators is looking to establish a permanent useR! working group.
+After reaching so many people that could not have attended an in person
+conference, it is safe to say that a strong online component is there to
+stay. To help develop this online component further a new useR! working
+group is in its seeding phase.</p>
+<p>Together with @<a href="https://twitter.com/heathrturnr">hturner</a>,
+I’ve administered a Google Season of Docs project to document the useR!
+conference. The project resulted in a <a
+href="https://rconf.gitlab.io/userknowledgebase/">knowledgebase</a> and
+an <a
+href="%5Bknowledgebase%5D(https://rconf.gitlab.io/userinfoboard/)">information
+dashboard</a>to help new organizers stop reinventing the wheel and off
+to a kickstart.</p>
+<h3 id="what-workers-want-national-research-program-77">What Workers
+Want: National Research Program 77</h3>
+<p>Together with the head KOF’s labor market group, Michael
+Siegenthaler, I am a co-PI in an SNF funded National Research Program 77
+project. The project makes use of novel data from a public employment
+platform to investigate how unemployed job seekers search for work
+online. The aim is to better understand trends on the Swiss labour
+market and the success factors of job searches, and to optimise work
+placement.</p>
+<p><a href="https://p3.snf.ch/project-187229#">SNF Research database</a>
+| <a
+href="https://www.nfp77.ch/en/portfolio/strategies-for-job-hunting-on-online-job-platforms/">Project
+Page SNF</a></p>
 <h3 id="hacking-for-social-sciences">Hacking for Social Sciences</h3>
-<p>Hacking for Social Sciences is a PhD level course, an online book and a mission to teach young research the data automation tricks I wish I had known when I started my PhD.</p>
-<p><a href="https://h4sci.github.io/">project postcard</a> | <a href="h4sci.github.io/h4sci-book/">online book</a></p>
+<p>Hacking for Social Sciences is a PhD level course, an online book and
+a mission to teach young research the data automation tricks I wish I
+had known when I started my PhD.</p>
+<p><a href="https://h4sci.github.io/">project postcard</a> | <a
+href="h4sci.github.io/h4sci-book/">online book</a></p>
 <h3 id="user-2021-global">useR! 2021 global</h3>
-<p>In 2021, I was a global coordinator (co-chair) of useR!, the annual conference of the R Project for Statistical Computing.</p>
-<p><a href="https://user2021.r-project.org/">useR! 2021 website</a> | <a href="https://user2021.r-project.org/blog/">useR! 2021 blog</a></p>
-<h3 id="swissdata---making-public-data-public">Swissdata - Making Public Data Public</h3>
-<p>Swissdata is a joint effort with <span class="citation" data-cites="christop_sax">@christop_sax</span> to make publicly available data machine readable and therefore processible. We read adverse spreadsheets and turn them into a smooth-sailing pair of long format .csv and .json (or .yaml) meta information. We cooperate with local and federal administration in Switzerland to re-publish information in machine readable fashion.</p>
+<p>In 2021, I was a global coordinator (co-chair) of useR!, the annual
+conference of the R Project for Statistical Computing.</p>
+<p><a href="https://user2021.r-project.org/">useR! 2021 website</a> | <a
+href="https://user2021.r-project.org/blog/">useR! 2021 blog</a></p>
+<h3 id="swissdata---making-public-data-public">Swissdata - Making Public
+Data Public</h3>
+<p>Swissdata is a joint effort with <span class="citation"
+data-cites="christop_sax">@christop_sax</span> to make publicly
+available data machine readable and therefore processible. We read
+adverse spreadsheets and turn them into a smooth-sailing pair of long
+format .csv and .json (or .yaml) meta information. We cooperate with
+local and federal administration in Switzerland to re-publish
+information in machine readable fashion.</p>
 <p><a href="https://github.com/swissdata/demo">swissdata demo</a></p>
 <h3 id="digital-lives-snf">Digital Lives (SNF)</h3>
-<h3 id="migration-of-the-kof-time-series-database">Migration of the KOF Time Series Database</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<h3 id="migration-of-the-kof-time-series-database">Migration of the KOF
+Time Series Database</h3>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

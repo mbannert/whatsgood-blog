@@ -1,7 +1,7 @@
 ---
-title: "Teaching"
+title: "Teaching & Workshops"
 description: |
-  I believe teaching is an essential part of research. To me, teaching is so much more than 'just' onboarding the next generation of researchers. Interaction with learners adds an extra perspective for instructors and helps scholars to communicate better. I am thankful for the great output *and* input I've received through my courses and workshops and enjoy teaching a lot. Though not a fulltime lecturer, I try to teach workshop or course every semester (or at least every year). 
+  I believe teaching is an essential part of research. To me, teaching is so much more than 'just' onboarding the next generation of researchers. Interaction with learners adds an extra perspective for instructors and helps scholars to communicate better. I am thankful for the great output *and* input I've received through my courses and workshops. Hence I enjoy teaching a lot. Though not a fulltime lecturer, I try to teach a workshop or course every semester (or at least every year). 
 ---
 
 
@@ -24,25 +24,26 @@ Guest lecture on using social media in research at University of Applied Science
 
 Full semester data science course for students of humanities at the department of history at the university of Basel. 
 
-## Interactive Statistics and Data Visualization with R and Shiny
+
+## Older Projects and Workshops
 
 
-## Exploring Statistics with R
+### Interactive Statistics and Data Visualization with R and Shiny
 
 
-## Webdatanet Training School 
+### Exploring Statistics with R
 
 
-## Principles of Econometrics Tutorial with R
-
-R based to tutorial for principles of Econometrics taught at ETH Zurich by Prof. Dr. Jan-Egbert Sturm.
+### Webdatanet Training School (a COST net project)
 
 
-## Workshops in the Public Sector
+### Principles of Econometrics Tutorial with R
 
 
+### Workshops in the Public Sector
 
-## Workshops and Consulting in the Automotive Industry 
+
+### Workshops and Consulting in the Automotive Industry 
 
 
 
