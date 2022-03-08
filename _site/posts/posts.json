@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/editorial-march-2022/",
+    "title": "Editorial March 2022",
+    "description": "Well, it took me longer than expected but I am back online now and ready to follow up on plans made a while ago.",
+    "author": [
+      {
+        "name": "Matt Bannert",
+        "url": "https://whatsgood.io"
+      }
+    ],
+    "date": "2022-02-20",
+    "categories": [],
+    "contents": "\nI guess I am no different when than many when it comes to pushing\nthose important-to-me-but-not-urgent projects against a busy schedule.\nSo, yes I am late with an update once again, but I am there is some\nprogress to report.\nBack in October 2021, I announced a podcast mini series for the\nResearch Software Engineering Stories podcast. Well it’s not quite a\nseries yet, but a very interesting discussion with mlr3 core members Bernd\nBischl and Patrick Schratz is on the record and\nhopefully out anytime soon. (mlr3 is the next generation of the Machine\nLearning in R framework).\nThe second year of Hacking for Social is in the books, too. Another\ncohort of PhD candidates and guests made it through. R shiny apps were\nbuild, cloud computing was explored, API wrappers were built, a health\ncare app project was initiated, people made their first hands-on git\nexperiences, got their first impression of docker and PostgreSQL and\nimproved their collaboration approach in the process. Others build nifty\ndata visualizations. I am humbled and thankful for all the great input\nfrom participants and happy about the high degree of interaction. So\nthought the ETH who nominated the course for the 2022\nKITE teaching award. YAY!\nStill there is much to improve aboout the course. First and foremost\nI am looking for a self-hosted chat platform alternative for next year.\nSecond, I plan to start an accompanying YouTube channel to cover FAQs\nand side topics. So far, that channel did not make it past experimental\nstate, but hopefully that will change this year!\nAnd yes, the book.\nIt’s in the making! I’ve gotten great feedback from the editor and\nreviewers and I am still optmistic to publish the Programming /w data\nthis summer!\nOf course, I continued to follow hoops. And even if you are not into\nbasketball, it’s an interesting benchnmark of how on our off my thoughts\nare after a month or two. The East has one of the most wide open playoff\nraces in decades. The Bulls, Bucks and Heat are right there. The\nblockbuster deadline trades that saw James Harden and Ben Simmons swap\nteams made the East even more intriguing. The Suns remain the constant\nout West. The Warriors got Klay back, but lost Draymond Greene to injury\nwhich left them struggling. Ja Morant secured the dunk and block of the\nseason with 20 games to go while his Grizz continue to rise.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2022-03-08T22:49:18+01:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/welcome/",
     "title": "Welcome! Expect Software, Stats, Hoops and Trash.",
     "description": "Statistics, sports and recent gibberish are all moving targets. Hence I’ll do my best to dish out a monthly editorial like update. Plus, doing so is an interesting mechanism to check whether I am sticking to plans made a month ago.",

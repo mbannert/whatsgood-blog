@@ -22,6 +22,9 @@ navbar:
     - text: "whoami"
       href: whoami.html
     - icon: fab fa-github
+      href: "https://github.com/mbannert"
     - icon: fab fa-twitter
+      href: "https://twitter.com/whatsgoodio"
     - icon: fab fa-youtube
+      href: "https://www.youtube.com/channel/UCZWDoSPTyqbheYw4sOz-wgA"
 output: distill::distill_article
