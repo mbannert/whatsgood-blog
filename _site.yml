@@ -1,0 +1,30 @@
+name: "What's good?"
+title: "whatsgood?"
+description: |
+  Stats. Hoops. Trash.
+output_dir: "_site"
+cookie_consent:
+  style: simple
+  type: express
+  palette: light
+  lang: en
+  cookies_policy: url
+navbar:
+  right:
+    - text: "teaching & workshops"
+      href: teaching.html
+    - text: "talks"
+      href: talks.html
+    - text: "projects"
+      href: projects.html
+    - text: "software"
+      href: software.html
+    - text: "whoami"
+      href: whoami.html
+    - icon: fab fa-github
+      href: "https://github.com/mbannert"
+    - icon: fab fa-twitter
+      href: "https://twitter.com/whatsgoodio"
+    - icon: fab fa-youtube
+      href: "https://www.youtube.com/channel/UCZWDoSPTyqbheYw4sOz-wgA"
+output: distill::distill_article

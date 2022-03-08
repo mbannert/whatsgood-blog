@@ -1,0 +1,36 @@
+[
+  {
+    "path": "posts/editorial-march-2022/",
+    "title": "Editorial March 2022",
+    "description": "Well, it took me longer than expected but I am back online now and ready to follow up on plans made a while ago.",
+    "author": [
+      {
+        "name": "Matt Bannert",
+        "url": "https://whatsgood.io"
+      }
+    ],
+    "date": "2022-02-20",
+    "categories": [],
+    "contents": "\nI guess I am no different when than many when it comes to pushing\nthose important-to-me-but-not-urgent projects against a busy schedule.\nSo, yes I am late with an update once again, but I am there is some\nprogress to report.\nBack in October 2021, I announced a podcast mini series for the\nResearch Software Engineering Stories podcast. Well it’s not quite a\nseries yet, but a very interesting discussion with mlr3 core members Bernd\nBischl and Patrick Schratz is on the record and\nhopefully out anytime soon. (mlr3 is the next generation of the Machine\nLearning in R framework).\nThe second year of Hacking for Social is in the books, too. Another\ncohort of PhD candidates and guests made it through. R shiny apps were\nbuild, cloud computing was explored, API wrappers were built, a health\ncare app project was initiated, people made their first hands-on git\nexperiences, got their first impression of docker and PostgreSQL and\nimproved their collaboration approach in the process. Others build nifty\ndata visualizations. I am humbled and thankful for all the great input\nfrom participants and happy about the high degree of interaction. So\nthought the ETH who nominated the course for the 2022\nKITE teaching award. YAY!\nStill there is much to improve aboout the course. First and foremost\nI am looking for a self-hosted chat platform alternative for next year.\nSecond, I plan to start an accompanying YouTube channel to cover FAQs\nand side topics. So far, that channel did not make it past experimental\nstate, but hopefully that will change this year!\nAnd yes, the book.\nIt’s in the making! I’ve gotten great feedback from the editor and\nreviewers and I am still optmistic to publish the Programming /w data\nthis summer!\nOf course, I continued to follow hoops. And even if you are not into\nbasketball, it’s an interesting benchnmark of how on our off my thoughts\nare after a month or two. The East has one of the most wide open playoff\nraces in decades. The Bulls, Bucks and Heat are right there. The\nblockbuster deadline trades that saw James Harden and Ben Simmons swap\nteams made the East even more intriguing. The Suns remain the constant\nout West. The Warriors got Klay back, but lost Draymond Greene to injury\nwhich left them struggling. Ja Morant secured the dunk and block of the\nseason with 20 games to go while his Grizz continue to rise.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2022-03-08T22:49:18+01:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome! Expect Software, Stats, Hoops and Trash.",
+    "description": "Statistics, sports and recent gibberish are all moving targets. Hence I’ll do my best to dish out a monthly editorial like update. Plus, doing so is an interesting mechanism to check whether I am sticking to plans made a month ago.",
+    "author": [
+      {
+        "name": "Matt Bannert",
+        "url": "https://whatsgood.io"
+      }
+    ],
+    "date": "2021-10-26",
+    "categories": [],
+    "contents": "\nThe end of 2021 has been busy for me. I have been working on a 3-part mini series of the RSE stories podcast. RSE Stories is the podcast of the U.S. society of research software engineering. I am looking forward to interesting discussions but I am also looking forward to the hosting and audio editing experience.\nIn fall, my PhD level course went into its second year. My teaching at ETH is part of my ❤️-project Hacking for Social Sciences in which I teach data automation for researchers. Looking back, one of the most interesting things about this project is that I meant to call it Hacking for Economists. And if it wasn’t for @ (thank you, sir!) that would have been the name and many very appreciated contributors might have thought not-for-me before they even started. The wide spread interest and feedback from across fields has fueled the project and will eventually change its name to something more inclusive like Hacking for Researchers. As you might have seen on twitter, I have teamed up with @crcgrubbsd and @CRC_MathStats to come up with an actual book. Here’s a work-in-progress version of my book https://h4sci.github.io/h4sci-book/ . Feedback welcome!\n\nGrateful for this 👇 chance to work  with @crcgrubbsd on my ♥️ project.Also feels surreal, given the Allstar lineup of authors @CRC_MathStats puts up. Excited to put the work in + do my best to make Programming with Data a useful resource. Let us know what else to cover! #RSE https://t.co/KAalmCoTrg— Matt Bannert (@whatsgoodio) November 16, 2021\n\n\nAnd, oh boi, did the hoop season start. Dark horse teams, surprises and several seasons worth of interesting is-team-X-for-real stories to follow after about 20 games into the NBA season. The Bulls are back, the champion Bucks manage to crawl out of the hole injuries dug for them, Miami’s OG front office put together an off-season of its own class and the West is wild as it ever was. The Warriors are back looking high-octane (and Klay is not even back), the Suns show that they are not a fluke, the Jazz seem to be in tune will the rest of the West is still busy sorting their feet. Also on an individual level, there is a lot of development worth following. The rise of Ja Morant continues while some players struggle under the rule changes, for some players it may be even the new ball.\nWith the year coming to an end and the holiday season ahead (including darts and more basketball), I plan to tone the programming stuff down a little and explore new projects. That is more podcasting ahead, more book writing and looking into an online marketing project with @jburkhardt.\nHave a peaceful holiday season\nMatt\n\n\n\n",
+    "preview": {},
+    "last_modified": "2022-03-08T13:16:52+01:00",
+    "input_file": {}
+  }
+]

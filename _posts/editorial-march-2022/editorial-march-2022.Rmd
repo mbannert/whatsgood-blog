@@ -1,0 +1,39 @@
+---
+title: "Editorial March 2022"
+description: |
+  Well, it took me longer than expected but I am back online now and ready to follow up on plans made a while ago. 
+author:
+  - name: Matt Bannert 
+    url: https://whatsgood.io
+date: "2022-02-20"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+I guess I am no different when than many when it comes to pushing those important-to-me-but-not-urgent projects against a busy schedule. So, yes I 
+am late with an update once again, but I am there is some progress to report. 
+
+Back in October 2021, I announced a podcast mini series for the Research Software Engineering Stories podcast. Well it's not quite a series yet, but a very interesting 
+discussion with [mlr3](https://mlr3.mlr-org.com/) core members [Bernd Bischl]() and [Patrick Schratz]() is on the record and hopefully out anytime soon. (mlr3 is the next generation of the Machine Learning in R framework).
+
+The second year of Hacking for Social is in the books, too. Another cohort of PhD candidates and guests made it through. R shiny apps were build, cloud computing was explored, API wrappers were built, a health care app project was initiated, people made their first hands-on git experiences, got their first impression of docker and PostgreSQL and improved their collaboration approach in the process. Others build nifty data visualizations. I am humbled and thankful for all the great input from participants and happy about the high degree of interaction. So thought the ETH who nominated the course for the [2022 KITE teaching award](https://ethz.ch/en/the-eth-zurich/education/innovation/kite-award.html). YAY!
+
+Still there is much to improve aboout the course. First and foremost I am looking for a self-hosted chat platform alternative for next year. Second, I plan to start an accompanying YouTube channel to cover FAQs and side topics. So far, that channel did not make it past experimental state, but hopefully that will change this year! 
+
+And yes, the [book](https://h4sci.github.io/h4sci-book/). It's in the making! I've gotten great feedback from the editor and reviewers and I am still optmistic to publish the Programming /w data this summer! 
+
+Of course, I continued to follow hoops. And even if you are not into basketball, it's an interesting benchnmark of how on our off my thoughts are after a month or two. The East has one of the most wide open playoff races in decades. The Bulls, Bucks and Heat are right there. The blockbuster deadline trades that saw James Harden and Ben Simmons swap teams made the East even more intriguing. The Suns remain the constant out West. The Warriors got Klay back, but lost Draymond Greene to injury which left them struggling. Ja Morant secured the [dunk](https://www.youtube.com/watch?v=BzqybOt0Ics) and [block](https://www.youtube.com/watch?v=fg35MYjqIoY) of the season with 20 games to go while his Grizz continue to rise. 
+
+
+
+
+
+
+
+
+
+
+

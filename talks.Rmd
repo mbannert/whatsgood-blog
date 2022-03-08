@@ -1,0 +1,73 @@
+---
+title: "Talks"
+description: |
+  I enjoy exchange with students, partners from the public and private sector as well as with the open source community at large. On this site I keep track of my blabla  and related material such as slides or videos.
+---
+
+
+### The {kofdata} API wrapper R package (adminR Lugano, 2021)
+
+Presentation of the {kofdata} R package at the adminR meetup during Statistiktage 2021. {kofdata} is an R layer around the KOF data REST API for data transfer. 
+
+[slides](https://matt-talks.github.io/adminR-lugano-2021/#2) | [video](https://www.youtube.com/watch?v=VJC-VU4g1KA) 
+
+
+### The {timeseriesdb} R package (uRos, 2020)
+
+[slides](https://matt-talks.github.io/timeseriesdb-uros/#1) | [video](https://www.youtube.com/watch?v=8sAZE8fYvNU) 
+
+
+### From Airflow to Docker (uRos, 2020)
+
+Lightning presentation held at uRos - R in Official statistics. I talk about R in an Open Source Production Environment.
+
+[slides](https://matt-talks.github.io/uros2020/#1) | [video](https://youtu.be/bTYrw1RA45Y?t=2449)
+
+
+### R Alonside Airflow, Docker and Gitlab CI (eRum, 2020)
+
+I presented the Open Source ecosytem we have set up at KOF Swiss Economic Institute and discussed how R behaves in this environment. The talk was given as part of the in production track at eRum 2020. 
+
+[video](https://youtu.be/VQtEI-akVyk)
+
+
+### useR! 2019 Travel Report (ZH R Users Meetup, 2019)
+
+The #train2useR journey started at Zurich main station. Together with other R enthusiasts, I took the train to Toulouse, France. When we were back in Zurich we had plenty to report from decent donuts, to superb talks and wrecked trains. 
+
+
+```{r,echo=FALSE}
+library(tweetrmd)
+tweetrmd::include_tweet("https://twitter.com/whatsgoodio/status/1148310157325152257")
+```
+
+[event](https://www.meetup.com/Zurich-R-User-Group/events/265175210/) | [slides](https://zhr-meetup-201910.netlify.app/#1)
+
+
+### useR! 2019: The {timeseriesdb} R package
+
+At useR! 2019 in Toulouse, France, I presented plans for a new release of the {timeseriesdb} R package. Fun fact, I was the first to come up with a user2019 subdomain at netlify ;) 
+
+[slides](https://user2019.netlify.app/#1) | [video](https://www.youtube.com/watch?v=4Y-7B9aIP6Y)
+
+
+### techTalk  (invited, Aarau, 2019)
+
+I discussed *R in Production - The R Ecosystem @KOF* 
+with an audience from cantonal administration of the Swiss Canton of Aargau. 
+
+
+### adminR: Economic Statistics (Zurich, 2019)
+
+```{r, echo=FALSE}
+tweetrmd::include_tweet("https://twitter.com/adminR3/status/1106334380170113024")
+```
+
+I co-hosted adminR 2019 and gave the host talk at adminR - Economic Statistics. 
+
+[event](https://www.meetup.com/adminR/)
+
+### Schweizer Statistiktage: Open Source Driven Data Pipelines (zurich, 2018)
+
+
+

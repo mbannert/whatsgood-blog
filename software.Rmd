@@ -1,0 +1,55 @@
+---
+title: "Software Projects"
+description: |
+  When it comes to software development my motto is open by default. In other words, I need a good reason to not publish the source code of the software I write. These days, I do programming with data and therefore mostly work with SQL, R and Python. Expect some web development, data visualization and devOps routines blended in from time to time. 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## {timeseriesdb} R package
+
+Started back in 2014, {timeseriesdb} is my longest tenured open source project. 
+Essentially, {timeseriesdb} maps R language time series representations to PostgreSQL relations. In addition to capabilities to persistently store time series themselves in a database, {timeseriesdb} allows for fine grained access rules, multi-lingual meta description as well as vintages (versions) of time series which allows for realtime analysis. 
+
+These features make {timeseriesdb} an ideal fit to manage and archive time 
+series in official statistics and other time series that are potentially revised. 
+{timeseriesdb} is reliable, light weight option to store and manage millions of time series -- even from individuals to enterprises, academic researchers and public administration. Its SQL backend and architecture allows to easily add a REST interface to {timeseriesdb} and expose time series data through an REST API. 
+
+Documentation: [mbannert.github.com/timeseriesdb](https://mbannert.github.io/timeseriesdb)
+
+GitHub Development Repository: [github.com/mbannert/timeseriesdb](https://github.com/mbannert/timeseriesdb)
+
+Comprehensive R Archive Network (CRAN): https://cran.r-project.org/web/packages/timeseriesdb/index.html
+
+
+
+
+## {r4googleads} R Package - Read Google Ads Data into R
+
+{r4googleads} is the successor of my most successful open source contribution in terms of popularity. The {r4googleads} package is an API wrapper around Google's Ads API and succeeds the {RAdwords} package after Google is sunsetting its Adwords API and replacing it with the Google Ads API. {r4googleads} is joint work with my buddy and online marketing professional @[jburkhardt](https://github.com/jburkhardt/). 
+
+@[jburkardt](https://github.com/jburkhardt/) and me doing open source stuff for online marketing: [banboo data](https://buymeacoffee.com/banboodata)
+
+{r4googleads} documentation (including migration guide): https://banboo-data.github.io/r4googleads/
+
+Github Development Repository: https://github.com/banboo-data/r4googleads 
+
+
+Comprehensive R Archive Network (CRAN): https://cran.r-project.org/web/packages/r4googleads/index.html
+
+
+## {tstools} - A Time Series Toolbox for Official Statistics
+
+Plot official statistics' time series conveniently: automatic legends, highlight windows, stacked bar chars with positive and negative contributions, sum-as-line option, two y-axes with automatic horizontal grids that fit both axes and other popular chart types. 'tstools' comes with a plethora of defaults to let you plot without setting an abundance of parameters first, but gives you the flexibility to tweak the defaults. In addition to charts, 'tstools' provides a super fast, 'data.table' backed time series I/O that allows the user to export / import long format, wide format and transposed wide format data to various file types. 
+
+GitHub Development Repository: https://github.com/mbannert/tstools
+
+
+
+
+
+
+
