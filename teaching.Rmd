@@ -7,6 +7,11 @@ description: |
 
 ## ETH PhD Program: Hacking for Social Sciences 
 
+```{r,echo=FALSE}
+knitr::include_graphics("h4sci-logo.jpeg")
+```
+
+
 The Hacking for Social Sciences course is part of the hacking for social sciences project (h4sci) and intends to help scholars of Social Sciences and the Humanities gain a carpentry level understanding of applied programming with data as well as big picture view of the open source software ecosystem and infrastructure.
 
 Project website: [https://h4sci.github.io](https://h4sci.github.io)
