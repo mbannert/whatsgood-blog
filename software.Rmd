@@ -31,7 +31,7 @@ Comprehensive R Archive Network (CRAN): https://cran.r-project.org/web/packages/
 
 {r4googleads} is the successor of my most successful open source contribution in terms of popularity. The {r4googleads} package is an API wrapper around Google's Ads API and succeeds the {RAdwords} package after Google is sunsetting its Adwords API and replacing it with the Google Ads API. {r4googleads} is joint work with my buddy and online marketing professional @[jburkhardt](https://github.com/jburkhardt/). 
 
-@[jburkardt](https://github.com/jburkhardt/) and me doing open source stuff for online marketing: [banboo data](https://buymeacoffee.com/banboodata)
+@[jburkhardt](https://github.com/jburkhardt/) and me doing open source stuff for online marketing: [banboo data](https://buymeacoffee.com/banboo)
 
 {r4googleads} documentation (including migration guide): https://banboo-data.github.io/r4googleads/
 
